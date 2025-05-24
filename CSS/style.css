@@ -10,7 +10,9 @@ body {
   background-color: unset;
   color: unset;
 }
-
+a{
+  text-decoration: none;
+}
 /* Navbar */
 @media (min-width: 992px) {
   .navbar * {
