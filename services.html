@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Services</title>
+    <link rel="icon" href="fav.png" type="image/x-icon" />
+
+    <!-- Bootstrap Stylesheet -->
+    <link
+      href="CSS/bootstrap.css"
+      rel="stylesheet"
+    />
+    <!-- Owl Carousel Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="CSS/owl-carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="CSS/owl-theme.css"
+    />
+    <!-- Fontawesome Icons -->
+    <link
+    href="css/fontawesome.css"
+    rel="stylesheet"
+    />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <header class="side-nav">
+      <nav class="navbar navbar-expand-lg bg-light border-bottom">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand pt-3" href="#">
+            <h1>TESTTABLE</h1>
+          </a>
+          <!-- Mobile Navbar Toggle Button -->
+          <button
+            class="btn d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasMenu"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+          <!-- Navbar Links and Language Selector -->
+          <div class="collapse navbar-collapse justify-content-end">
+            <div class="d-flex gap-2 order-lg-2">
+              <button class="btn btn-login">تسجيل الدخول</button>
+              <div class="dropdown lang-menu">
+                <a class="btn" href="#">
+                  Ar
+                  <i
+                    data-lucide="chevron-down"
+                    class="chevron d-none d-lg-inline"
+                  ></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Ar</a></li>
+                  <li><a class="dropdown-item" href="#">En</a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="navbar-nav mb-2 mb-lg-0 order-lg-1">
+              <!-- Services Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle d-flex align-items-center gap-1"
+                  href="#"
+                >
+                  الخدمات
+                  <i
+                    data-lucide="chevron-down"
+                    class="chevron d-none d-lg-inline"
+                  ></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">خدمة 1</a></li>
+                  <li><a class="dropdown-item" href="#">خدمة 2</a></li>
+                </ul>
+              </li>
+              <!-- Other Navbar Links -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">الية العمل</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">انضم كمختبر</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      <!-- Offcanvas Menu for Mobile -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">القائمة</h5>
+          <button type="button" class="btn" data-bs-dismiss="offcanvas">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+            <!-- Services Collapse -->
+            <li class="nav-item">
+              <button
+                class="nav-link btn w-100 text-start collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#servicesCollapse"
+              >
+                الخدمات <i data-lucide="chevron-down" class="chevron"></i>
+              </button>
+              <div class="collapse" id="servicesCollapse">
+                <ul class="list-unstyled ps-3">
+                  <li><a class="dropdown-item" href="#">خدمة 1</a></li>
+                  <li><a class="dropdown-item" href="#">خدمة 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
+            <!-- Login Button -->
+            <li class="nav-item my-3">
+              <button class="btn btn-primary w-100">تسجيل الدخول</button>
+            </li>
+            <!-- Language Selector Collapse -->
+            <li class="nav-item">
+              <button
+                class="nav-link btn w-100 text-start collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#languageCollapse"
+              >
+                AR <i data-lucide="chevron-down" class="chevron"></i>
+              </button>
+              <div class="collapse" id="languageCollapse">
+                <ul class="list-unstyled ps-3">
+                  <li><a class="dropdown-item" href="#">AR</a></li>
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section services page -->
+    <section class="hero-overlay" style="background-image: url('./assets/services-header.jpg');">
+      <div class="hero-content">
+        <p class="hero-small-title">بتكلفة وجهد أقل</p>
+        <h1 class="hero-title">مشاركين مؤهلين لكافة<br>أنواع البحوث</h1>
+      </div>
+    </section>
+
+    <section class="get-participants container">
+      <div class="service1 mt-5">
+        <div class="serivce-img">
+          <img src="./assets/services-img.png" style="width: 100%;" />
+        </div>
+        <div class="serivce-content">
+          <h3>استقطاب المشاركين في الأبحاث</h3>
+          <p>نملك قاعدة بيانات تنمو بشكل متسارع وشبكة باحثين في أكثر من 10 دول حول العالم حيث يمكننا مساعدتك في استقطاب الأشخاص المؤهلين بناءً على معايير البحث المطلوبة سواء حسب الفئة العمرية أو الاهتمامات أو السلوك وغيرها من المعايير من أجل ضمان جودة البحث الذي تعمل عليه.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Hero Section with Video -->
+    <section class="hero-section position-relative">
+      <div class="hero-video-container">
+        <video
+          id="hero-video"
+          autoplay
+          muted
+          playsinline
+          style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-mask: url('#custom-mask');
+            mask: url('#custom-mask');
+            -webkit-mask-size: 100% 100%;
+            mask-size: 100% 100%;
+          "
+        >
+          <source src="assets/TesTTable.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="container">
+        <div class="hero-content d-flex flex-column justify-content-center">
+          <h1>استقطب <span>مشاركين</span> لبحثك</h1>
+          <p>
+            استقطاب المشاركين لأبحاثك أصبح أسهل من أي وقت مضى بدون تعقيد وبدون
+            قلق
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer class="footer-section bg-black text-white pt-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Column 1: Logo & About -->
+          <div class="col-lg-3 col-md-6">
+            <img src="logo-testtable.png" alt="logo" class="img-fluid mb-3" />
+            <p class="footer-desc">
+              دقة في الاختيار، وتميز في الأداء! نخضع خبراءنا لاختبارات صارمة،
+              لنقدم لك الأفضل على الإطلاق
+            </p>
+            <div class="footer-social d-flex gap-3 mt-3">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Important Links -->
+          <div class="col-lg-3 col-6">
+            <h5 class="footer-title">الروابط الهامة</h5>
+            <ul class="list-unstyled footer-links">
+              <li><i data-lucide="chevron-left"></i> الرئيسية</li>
+              <li><i data-lucide="chevron-left"></i> الخدمات</li>
+              <li><i data-lucide="chevron-left"></i> الية العمل</li>
+              <li><i data-lucide="chevron-left"></i> تواصل معنا</li>
+            </ul>
+          </div>
+
+          <!-- Column 3: User Links -->
+          <div class="col-lg-3 col-6">
+            <h5 class="footer-title">روابط المستخدمين</h5>
+            <ul class="list-unstyled footer-links">
+              <li><i data-lucide="chevron-left"></i> توظيف مشاركين للاختبار</li>
+              <li><i data-lucide="chevron-left"></i> انضم الينا كمختبر</li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact Info -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-title">معلومات الاتصال</h5>
+            <ul class="list-unstyled footer-links">
+              <li>
+                <i data-lucide="map-pin"></i> الرياضي، شارع الأمير سلطان، جدة
+              </li>
+              <li><i data-lucide="phone"></i> (0761) 654-123987</li>
+              <li><i data-lucide="mail"></i> info@yoursite.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Section -->
+      <div class="mt-5" style="background-color: #1f2025">
+        <div
+          class="container py-3 text-center text-white"
+          style="font-size: 14px"
+        >
+          &copy; كل الحقوق محفوظة TesTTable 2025
+        </div>
+      </div>
+    </footer>
+
+     <!-- jQuery Script -->
+    <script src="js/JQuery.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="js/owl-carousel.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.js"></script>
+
+<!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

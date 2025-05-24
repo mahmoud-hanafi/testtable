@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TesTTable</title>
+    <link rel="icon" href="fav.png" type="image/x-icon" />
+
+    <!-- Bootstrap Stylesheet -->
+    <link
+      href="CSS/bootstrap.css"
+      rel="stylesheet"
+    />
+    <!-- Owl Carousel Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="CSS/owl-carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="CSS/owl-theme.css"
+    />
+    <!-- Fontawesome Icons -->
+    <link
+    href="css/fontawesome.css"
+    rel="stylesheet"
+    />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Inline SVG Mask for Video Masking -->
+    <svg
+      width="0"
+      height="0"
+      xmlns="http://www.w3.org/2000/svg"
+      style="position: absolute"
+    >
+      <defs>
+        <mask
+          id="custom-mask"
+          maskUnits="objectBoundingBox"
+          maskContentUnits="objectBoundingBox"
+        >
+          <rect width="1" height="1" fill="black" />
+          <path
+            fill="white"
+            d="M1,0.895 C1,0.895 0.420,0.895 0.420,0.895 0.412,0.895 0.404,0.908 0.401,0.927 0.401,0.927 0.395,0.968 0.395,0.968 0.391,0.987 0.383,1 0.375,1 0.375,1 0,1 0,1 0,1 0,0 0,0 0,0 1,0 1,0 1,0 1,0.895 1,0.895 Z"
+          />
+        </mask>
+      </defs>
+    </svg>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg bg-light border-bottom">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="logo-testtable.png" alt="Logo" style="height: 50px" />
+        </a>
+        <!-- Mobile Navbar Toggle Button -->
+        <button
+          class="btn d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasMenu"
+        >
+          <i data-lucide="menu"></i>
+        </button>
+        <!-- Navbar Links and Language Selector -->
+        <div class="collapse navbar-collapse justify-content-end">
+          <div class="d-flex gap-2 order-lg-2">
+            <button class="btn btn-login">تسجيل الدخول</button>
+            <div class="dropdown lang-menu">
+              <a class="btn" href="#">
+                Ar
+                <i
+                  data-lucide="chevron-down"
+                  class="chevron d-none d-lg-inline"
+                ></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ar</a></li>
+                <li><a class="dropdown-item" href="#">En</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="navbar-nav mb-2 mb-lg-0 order-lg-1">
+            <!-- Services Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle d-flex align-items-center gap-1"
+                href="#"
+              >
+                الخدمات
+                <i
+                  data-lucide="chevron-down"
+                  class="chevron d-none d-lg-inline"
+                ></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">خدمة 1</a></li>
+                <li><a class="dropdown-item" href="#">خدمة 2</a></li>
+              </ul>
+            </li>
+            <!-- Other Navbar Links -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">الية العمل</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">انضم كمختبر</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas Menu for Mobile -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">القائمة</h5>
+        <button type="button" class="btn" data-bs-dismiss="offcanvas">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+          <!-- Services Collapse -->
+          <li class="nav-item">
+            <button
+              class="nav-link btn w-100 text-start collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#servicesCollapse"
+            >
+              الخدمات <i data-lucide="chevron-down" class="chevron"></i>
+            </button>
+            <div class="collapse" id="servicesCollapse">
+              <ul class="list-unstyled ps-3">
+                <li><a class="dropdown-item" href="#">خدمة 1</a></li>
+                <li><a class="dropdown-item" href="#">خدمة 2</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
+          <!-- Login Button -->
+          <li class="nav-item my-3">
+            <button class="btn btn-primary w-100">تسجيل الدخول</button>
+          </li>
+          <!-- Language Selector Collapse -->
+          <li class="nav-item">
+            <button
+              class="nav-link btn w-100 text-start collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#languageCollapse"
+            >
+              AR <i data-lucide="chevron-down" class="chevron"></i>
+            </button>
+            <div class="collapse" id="languageCollapse">
+              <ul class="list-unstyled ps-3">
+                <li><a class="dropdown-item" href="#">AR</a></li>
+                <li><a class="dropdown-item" href="#">EN</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero Section with Video -->
+    <section class="hero-section position-relative">
+      <div class="hero-video-container">
+        <video
+          id="hero-video"
+          autoplay
+          muted
+          playsinline
+          style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-mask: url('#custom-mask');
+            mask: url('#custom-mask');
+            -webkit-mask-size: 100% 100%;
+            mask-size: 100% 100%;
+          "
+        >
+          <source src="assets/TesTTable.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="container">
+        <div class="hero-content d-flex flex-column justify-content-center">
+          <h1>استقطب <span>مشاركين</span> لبحثك</h1>
+          <p>
+            استقطاب المشاركين لأبحاثك أصبح أسهل من أي وقت مضى بدون تعقيد وبدون
+            قلق
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Request Testers Form Section -->
+    <div class="container" id="request-testers">
+      <div class="mt-5">
+        <form class="mx-auto bg-white p-4 rounded main-form position-relative">
+          <div class="select-items">
+            <!-- Select for Test Users -->
+            <div class="custom-select">
+              <img src="assets/main-select-1.png" alt="User" class="left-image" />
+              <span>9 test users</span>
+              <svg
+                class="chevron-down"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <div class="custom-select-menu">
+                <div class="option-item active" data-value="9">
+                  <img src="assets/main-select-1.png" alt="User" /> 9 test users
+                </div>
+                <div class="option-item" data-value="10">
+                  <img src="assets/main-select-1.png" alt="User" /> 10 test users
+                </div>
+                <div class="option-item" data-value="11">
+                  <img src="assets/main-select-1.png" alt="User" /> 11 test users
+                </div>
+                <div class="option-item" data-value="12">
+                  <img src="assets/main-select-1.png" alt="User" /> 12 test users
+                </div>
+              </div>
+            </div>
+            <div class="custom-select">
+              <img src="assets/main-select-1.png" alt="User" class="left-image" />
+              <span>9 test users</span>
+              <svg
+                class="chevron-down"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <div class="custom-select-menu">
+                <div class="option-item active" data-value="9">
+                  <img src="assets/main-select-1.png" alt="User" /> 9 test users
+                </div>
+                <div class="option-item" data-value="10">
+                  <img src="assets/main-select-1.png" alt="User" /> 10 test users
+                </div>
+                <div class="option-item" data-value="11">
+                  <img src="assets/main-select-1.png" alt="User" /> 11 test users
+                </div>
+                <div class="option-item" data-value="12">
+                  <img src="assets/main-select-1.png" alt="User" /> 12 test users
+                </div>
+              </div>
+            </div>
+            <div class="custom-select">
+              <img src="assets/main-select-1.png" alt="User" class="left-image" />
+              <span>9 test users</span>
+              <svg
+                class="chevron-down"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <div class="custom-select-menu">
+                <div class="option-item active" data-value="9">
+                  <img src="assets/main-select-1.png" alt="User" /> 9 test users
+                </div>
+                <div class="option-item" data-value="10">
+                  <img src="assets/main-select-1.png" alt="User" /> 10 test users
+                </div>
+                <div class="option-item" data-value="11">
+                  <img src="assets/main-select-1.png" alt="User" /> 11 test users
+                </div>
+                <div class="option-item" data-value="12">
+                  <img src="assets/main-select-1.png" alt="User" /> 12 test users
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100">
+            متابعة الطلب
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Partners Section with Owl Carousel -->
+    <section class="partners container">
+      <div class="parent">
+        <div class="child-one"></div>
+        <div class="child-two">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="assets/partners/Mask group.png" alt="Logo 1" />
+            </div>
+            <div class="item">
+              <img src="assets/partners/Mask group-1.png" alt="Logo 2" />
+            </div>
+            <div class="item">
+              <img src="assets/partners/Mask group-2.png" alt="Logo 3" />
+            </div>
+            <div class="item">
+              <img src="assets/partners/Mask group-3.png" alt="Logo 4" />
+            </div>
+            <div class="item">
+              <img src="assets/partners/Mask group-4.png" alt="Logo 5" />
+            </div>
+            <div class="item">
+              <img src="assets/partners/Mask group-5.png" alt="Logo 6" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- How it Works Section -->
+    <!-- Workflow Section -->
+    <section class="workflow-section">
+      <div class="container">
+        <!-- Title -->
+        <h2 class="workflow-title">
+          آلية عمل سلسة تبدأ بطلبك وتنتهي برؤى قابلة للتنفيذ
+        </h2>
+
+        <!-- Subtitle -->
+        <p class="workflow-subtitle">
+          نص توضيحي يشرح آلية العمل وكيف تبدأ بطلب الخدمة وتنتهي بالحصول على رؤى
+          قابلة للتنفيذ بكل سهولة ومرونة.
+        </p>
+
+        <!-- Content -->
+        <div class="workflow-content">
+          <!-- Image Column -->
+          <div class="workflow-image-column">
+            <img src="assets/workflow.jpg" alt="آلية العمل" />
+            <button class="workflow-button">آلية العمل</button>
+          </div>
+
+          <!-- Steps Column -->
+          <div class="workflow-steps">
+            <div class="workflow-step">
+              <h3>الخطوة أولى</h3>
+              <p>
+                املأ النموذج بمعلومات بسيطة عن مشروعك، والفئة المستهدفة، ونوع
+                الاختبار المطلوب، ونحن نتولى الباقي.
+              </p>
+            </div>
+            <div class="workflow-step">
+              <h3>الخطوة ثانية</h3>
+              <p>
+                بناءً على المواصفات التي تحددها، نوظف مستخدمين حقيقيين يمثلون
+                جمهورك بدقة.
+              </p>
+            </div>
+            <div class="workflow-step">
+              <h3>الخطوة ثالثة</h3>
+              <p>
+                املأ النموذج بمعلومات بسيطة عن مشروعك، والفئة المستهدفة، ونوع
+                الاختبار المطلوب، ونحن نتولى الباقي.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section">
+      <div class="container">
+        <!-- Title -->
+        <h2 class="experience-title">تجربة حقيقية، نتائج دقيقة كل مرة</h2>
+
+        <!-- Subtitle -->
+        <p class="experience-subtitle">
+          أبحاث تجربة المستخدم دقة تضمن لك التفوق
+        </p>
+
+        <!-- Content -->
+        <div class="experience-content">
+          <!-- Text Column -->
+          <div class="experience-text-column">
+            <p class="experience-description">
+              أبحاث وتجارب دقيقة تضمن لك جمع بيانات ذات جودة عالية تساعدك على
+              اتخاذ قرارات مبنية على نتائج موثوقة ومدروسة لتحسين خدماتك
+              ومنتجاتك.
+            </p>
+
+            <!-- Stats -->
+            <div class="experience-stats">
+              <div class="experience-stat">
+                <img src="assets/static1.png" alt="اختبار خدمات المستخدم" />
+                <div>
+                  <div class="stat-number">+ 5000</div>
+                  <div class="stat-text">اختبار خدمات المستخدم</div>
+                </div>
+              </div>
+              <div class="experience-stat">
+                <img src="assets/static2.png" alt="اختبار منتجات المستخدم" />
+                <div>
+                  <div class="stat-number">+ 4800</div>
+                  <div class="stat-text">اختبار منتجات المستخدم</div>
+                </div>
+              </div>
+              <div class="experience-stat">
+                <img src="assets/static3.png" alt="استبيانات وجمع بيانات" />
+                <div>
+                  <div class="stat-number">+ 8600</div>
+                  <div class="stat-text">عمل استبيانات وجمع بيانات</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Column -->
+          <div class="experience-image-column">
+            <img src="assets/tagroba.jpg" alt="تجربة المستخدم" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="case-study-section">
+      <div class="container case-study-content">
+        <!-- Image Column -->
+        <div class="case-study-image-column">
+          <img src="assets/studycase.jpg" alt="دراسة حالة" />
+        </div>
+
+        <!-- Text Column -->
+        <div class="case-study-text-column">
+          <div class="case-study-header">
+            <div>
+              <div class="case-study-subtitle">دراسة حالة</div>
+              <h2 class="case-study-title">هل البيانات كافية؟</h2>
+            </div>
+            <img src="assets/study-icon.png" alt="أيقونة دراسة حالة" />
+          </div>
+
+          <p class="case-study-paragraph">
+            أجرت منصتنا دراسة حالة بالتعاون مع شركة ناشئة تعمل في مجال التقنيات
+            المالية (Fintech) بهدف اختبار تجربة الاستخدام لمنصتها الجديدة قبل
+            الإطلاق الرسمي. تم التركيز على تحليل احتياجات وسلوك المستخدمين
+            الفعليين.
+          </p>
+
+          <h3 class="case-study-method-title">استخدمنا منهجين مختلفين:</h3>
+          <ul class="case-study-list">
+            <li>
+              <img src="assets/done.png" alt="تم" /> مقابلات فردية مع مستخدمين حقيقيين
+              من قاعدة بياناتنا.
+            </li>
+            <li>
+              <img src="assets/done.png" alt="تم" /> اختبار قابلية استبيانات سريعة عبر
+              الإنترنت للوصول لانطباعات أولية.
+            </li>
+          </ul>
+
+          <p class="case-study-paragraph">
+            بعد جمع البيانات، أجرينا مقارنة دقيقة بين نتائج المقابلات العميقة
+            وردود الاستبيانات، ليتضح أن المقابلات المباشرة كشفت مشكلات جوهرية لم
+            تذكر في الردود الرقمية.
+          </p>
+
+          <p class="case-study-result">
+            اعتمدت الشركة توصياتنا لتحسين تجربة المستخدم، ونجحت في تقليل نسبة
+            التخلي عن التسجيل بنسبة 37% خلال أول شهر من الإطلاق.
+          </p>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="container case-study-btn-container">
+        <a href="#" class="case-study-btn">
+          عرض الخدمات
+          <i data-lucide="arrow-left" class="btn-arrow"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Blog and Events Section -->
+    <section class="blog-events-section">
+      <div class="container">
+        <div class="mb-5">
+          <div class="section-subtitle">الفاعليات و المدونة</div>
+          <h2 class="section-title">
+            لا تفوّت جديدنا! مقالات ملهمة وفعاليات حيّة تُبقيك دائمًا في قلب
+            الحدث
+          </h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Blog Item 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-card">
+              <div class="blog-image-wrapper">
+                <svg
+                  viewBox="0 0 364 219"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-100 h-100"
+                >
+                  <defs>
+                    <clipPath id="clip-blog">
+                      <path
+                        d="M 364.00,189.00 C 364.00,205.57 350.57,219.00 334.00,219.00 334.00,219.00 224.50,219.00 224.50,219.00 214.84,219.00 207.00,211.16 207.00,201.50 207.00,201.50 207.00,201.50 207.00,201.50 207.00,191.84 199.16,184.00 189.50,184.00 189.50,184.00 30.00,184.00 30.00,184.00 13.43,184.00 0.00,170.57 0.00,154.00 0.00,154.00 0.00,1.00 0.00,1.00 0.00,0.45 0.45,0.00 1.00,0.00 1.00,0.00 363.00,0.00 363.00,0.00 363.55,0.00 364.00,0.45 364.00,1.00 364.00,1.00 364.00,189.00 364.00,189.00 Z"
+                      />
+                    </clipPath>
+                  </defs>
+                  <image
+                    href="assets/faq.jpg"
+                    width="364"
+                    height="219"
+                    preserveAspectRatio="xMidYMid slice"
+                    clip-path="url(#clip-blog)"
+                  />
+                </svg>
+              </div>
+              <div class="d-flex gap-3 tags mb-2">
+                <div>
+                  <i class="fa-solid fa-user"></i> <span>ادمن محمد</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-tag"></i> <span>التكنولوجيا</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 class="blog-title">
+                  كيف تستفيد الشركات من الذكاء الاصطناعي لتعزيز النمو؟
+                </h3>
+                <p class="blog-paragraph">
+                  أجرت منصتنا دراسة حالة بالتعاون مع شركة ناشئة تعمل في مجال
+                  التقنيات المالية...
+                </p>
+                <a href="#" class="blog-readmore"
+                  >اقرأ المزيد <i class="fa-solid fa-arrow-left-long"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Item 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-card">
+              <div class="blog-image-wrapper">
+                <svg
+                  viewBox="0 0 364 219"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-100 h-100"
+                >
+                  <defs>
+                    <clipPath id="clip-blog">
+                      <path
+                        d="M 364.00,189.00 C 364.00,205.57 350.57,219.00 334.00,219.00 334.00,219.00 224.50,219.00 224.50,219.00 214.84,219.00 207.00,211.16 207.00,201.50 207.00,201.50 207.00,201.50 207.00,201.50 207.00,191.84 199.16,184.00 189.50,184.00 189.50,184.00 30.00,184.00 30.00,184.00 13.43,184.00 0.00,170.57 0.00,154.00 0.00,154.00 0.00,1.00 0.00,1.00 0.00,0.45 0.45,0.00 1.00,0.00 1.00,0.00 363.00,0.00 363.00,0.00 363.55,0.00 364.00,0.45 364.00,1.00 364.00,1.00 364.00,189.00 364.00,189.00 Z"
+                      />
+                    </clipPath>
+                  </defs>
+                  <image
+                    href="assets/faq.jpg"
+                    width="364"
+                    height="219"
+                    preserveAspectRatio="xMidYMid slice"
+                    clip-path="url(#clip-blog)"
+                  />
+                </svg>
+              </div>
+              <div class="d-flex gap-3 tags mb-2">
+                <div>
+                  <i class="fa-solid fa-user"></i> <span>ادمن محمد</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-tag"></i> <span>التكنولوجيا</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 class="blog-title">
+                  كيف تستفيد الشركات من الذكاء الاصطناعي لتعزيز النمو؟
+                </h3>
+                <p class="blog-paragraph">
+                  أجرت منصتنا دراسة حالة بالتعاون مع شركة ناشئة تعمل في مجال
+                  التقنيات المالية...
+                </p>
+                <a href="#" class="blog-readmore"
+                  >اقرأ المزيد <i class="fa-solid fa-arrow-left-long"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Item 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-card">
+              <div class="blog-image-wrapper">
+                <svg
+                  viewBox="0 0 364 219"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-100 h-100"
+                >
+                  <defs>
+                    <clipPath id="clip-blog">
+                      <path
+                        d="M 364.00,189.00 C 364.00,205.57 350.57,219.00 334.00,219.00 334.00,219.00 224.50,219.00 224.50,219.00 214.84,219.00 207.00,211.16 207.00,201.50 207.00,201.50 207.00,201.50 207.00,201.50 207.00,191.84 199.16,184.00 189.50,184.00 189.50,184.00 30.00,184.00 30.00,184.00 13.43,184.00 0.00,170.57 0.00,154.00 0.00,154.00 0.00,1.00 0.00,1.00 0.00,0.45 0.45,0.00 1.00,0.00 1.00,0.00 363.00,0.00 363.00,0.00 363.55,0.00 364.00,0.45 364.00,1.00 364.00,1.00 364.00,189.00 364.00,189.00 Z"
+                      />
+                    </clipPath>
+                  </defs>
+                  <image
+                    href="assets/faq.jpg"
+                    width="364"
+                    height="219"
+                    preserveAspectRatio="xMidYMid slice"
+                    clip-path="url(#clip-blog)"
+                  />
+                </svg>
+              </div>
+              <div class="d-flex gap-3 tags mb-2">
+                <div>
+                  <i class="fa-solid fa-user"></i> <span>ادمن محمد</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-tag"></i> <span>التكنولوجيا</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 class="blog-title">
+                  كيف تستفيد الشركات من الذكاء الاصطناعي لتعزيز النمو؟
+                </h3>
+                <p class="blog-paragraph">
+                  أجرت منصتنا دراسة حالة بالتعاون مع شركة ناشئة تعمل في مجال
+                  التقنيات المالية...
+                </p>
+                <a href="#" class="blog-readmore"
+                  >اقرأ المزيد <i class="fa-solid fa-arrow-left-long"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button Section -->
+      <div class="container case-study-btn-container">
+        <a href="#" class="case-study-btn">
+          عرض المزيد
+          <i data-lucide="arrow-left" class="btn-arrow"></i>
+        </a>
+      </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="mb-5">
+          <div class="faq-subtitle">الأسئلة الشائعة</div>
+          <h2 class="faq-title">استفساراتك محل اهتمامنا</h2>
+        </div>
+
+        <!-- Two Columns -->
+        <div class="row align-items-start g-4">
+          <!-- Left Image -->
+          <div class="col-lg-5">
+            <img src="assets/faq.jpg" alt="الأسئلة الشائعة" class="img-fluid" />
+          </div>
+
+          <!-- Right Accordion -->
+          <div class="col-lg-6 offset-lg-1">
+            <div class="accordion" id="faqAccordion">
+              <!-- Item 1 -->
+              <div class="accordion-item bg-faq">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button faq-accordion-title"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    ما هي خدمة توظيف المشاركين للاختبار؟
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body faq-accordion-body">
+                    نقوم بتوفير مشاركين حقيقيين من جمهورك المستهدف للمشاركة في
+                    اختبارات تجربة المستخدم، المقابلات، الاستبيانات، أو الدراسات
+                    الميدانية. بما يضمن لك رؤى دقيقة وقابلة للتنفيذ.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="accordion-item bg-faq">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed faq-accordion-title"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    كيف يتم جمع وتحليل البيانات؟
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body faq-accordion-body">
+                    نعتمد منهجيات دقيقة لجمع وتحليل البيانات، باستخدام أدوات
+                    وتقنيات متطورة تضمن لك نتائج دقيقة ومبنية على بيانات فعلية
+                    من المستخدمين المستهدفين.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="accordion-item bg-faq">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed faq-accordion-title"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    هل يمكن تخصيص الدراسة وفقًا لاحتياجاتي؟
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body faq-accordion-body">
+                    نعم بالتأكيد، يمكننا تخصيص جميع مراحل الدراسة لتناسب أهداف
+                    مشروعك واحتياجات جمهورك المستهدف للحصول على أفضل النتائج.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section bg-black text-white pt-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Column 1: Logo & About -->
+          <div class="col-lg-3 col-md-6">
+            <img src="logo-testtable.png" alt="logo" class="img-fluid mb-3" />
+            <p class="footer-desc">
+              دقة في الاختيار، وتميز في الأداء! نخضع خبراءنا لاختبارات صارمة،
+              لنقدم لك الأفضل على الإطلاق
+            </p>
+            <div class="footer-social d-flex gap-3 mt-3">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Important Links -->
+          <div class="col-lg-3 col-6">
+            <h5 class="footer-title">الروابط الهامة</h5>
+            <ul class="list-unstyled footer-links">
+              <li><i data-lucide="chevron-left"></i> الرئيسية</li>
+              <li><i data-lucide="chevron-left"></i> الخدمات</li>
+              <li><i data-lucide="chevron-left"></i> الية العمل</li>
+              <li><i data-lucide="chevron-left"></i> تواصل معنا</li>
+            </ul>
+          </div>
+
+          <!-- Column 3: User Links -->
+          <div class="col-lg-3 col-6">
+            <h5 class="footer-title">روابط المستخدمين</h5>
+            <ul class="list-unstyled footer-links">
+              <li><i data-lucide="chevron-left"></i> توظيف مشاركين للاختبار</li>
+              <li><i data-lucide="chevron-left"></i> انضم الينا كمختبر</li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact Info -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-title">معلومات الاتصال</h5>
+            <ul class="list-unstyled footer-links">
+              <li>
+                <i data-lucide="map-pin"></i> الرياضي، شارع الأمير سلطان، جدة
+              </li>
+              <li><i data-lucide="phone"></i> (0761) 654-123987</li>
+              <li><i data-lucide="mail"></i> info@yoursite.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Section -->
+      <div class="mt-5" style="background-color: #1f2025">
+        <div
+          class="container py-3 text-center text-white"
+          style="font-size: 14px"
+        >
+          &copy; كل الحقوق محفوظة TesTTable 2025
+        </div>
+      </div>
+    </footer>
+
+     <!-- jQuery Script -->
+    <script src="js/JQuery.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="js/owl-carousel.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.js"></script>
+
+<!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

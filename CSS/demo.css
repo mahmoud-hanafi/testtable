@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+
+*,
+body {
+  font-family: "Almarai", sans-serif;
+}
+  
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+/* Header styles */
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+  
+  /* Logo styles */
+.logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
+  /* Navigation styles */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+  
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+  
+.nav-links li {
+    margin-left: 20px;
+    position: relative;
+}
+  
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+  
+.nav-links a:hover {
+    color: #ccc;
+}
+  
+  /* Register button styles */
+.register-btn {
+    background-color: white;
+    color: black !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+  
+.register-btn:hover {
+    background-color: #f0f0f0;
+}
+  
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    right: 0;
+    border-radius: 4px;
+}
+  
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #444;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown i {
+    margin-right: 5px;
+    font-size: 10px;
+}
+  
+/* Hamburger menu styles - hidden by default */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+}
+  
+.hamburger .line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+  
+.hamburger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+  
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+  
+.hamburger.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+  
+  /* Main content */
+.content {
+    padding: 40px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+  /* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+      padding: 0 20px;
+    }
+    .hamburger {
+      display: flex;
+      z-index: 101;
+    }
+    .navbar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+    }
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      position: fixed;
+      right: -100%;
+      top: 0;
+      height: 100vh;
+      width: 70%;
+      background-color: #111;
+      padding: 80px 20px 30px;
+      transition: right 0.3s ease;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    }
+    .nav-links.active {
+      right: 0;
+    }
+    .nav-links li {
+      margin: 15px 0;
+      width: 100%;
+    }
+    .dropdown-content {
+      position: static;
+      width: 100%;
+      background-color: #222;
+      display: none;
+      padding-right: 15px;
+    }
+    .dropdown-content a {
+      padding: 10px 15px;
+    }
+    /* Show dropdown on click instead of hover for mobile */
+    .dropdown.active .dropdown-content {
+      display: block;
+    }
+    /* Add click event for dropdown on mobile */
+    .dropdown > a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+}

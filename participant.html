@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TesTTable</title>
+    <link rel="icon" href="fav.png" type="image/x-icon" />
+
+    <!-- Bootstrap Stylesheet -->
+    <link
+      href="CSS/bootstrap.css"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome Icons -->
+    <link
+    href="css/fontawesome.css"
+    rel="stylesheet"
+    />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body style="background-color: #F8F8F8;">
+    <!-- Navbar Section -->
+    <header class="side-nav">
+      <nav class="navbar navbar-expand-lg bg-light border-bottom">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand pt-3" href="#">
+            <h1>TESTTABLE</h1>
+          </a>
+          <!-- Mobile Navbar Toggle Button -->
+          <button
+            class="btn d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasMenu"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+          <!-- Navbar Links and Language Selector -->
+          <div class="collapse navbar-collapse justify-content-end">
+            <div class="d-flex gap-2 order-lg-2">
+              <button class="btn btn-login">تسجيل الدخول</button>
+              <div class="dropdown lang-menu">
+                <a class="btn" href="#">
+                  Ar
+                  <i
+                    data-lucide="chevron-down"
+                    class="chevron d-none d-lg-inline"
+                  ></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Ar</a></li>
+                  <li><a class="dropdown-item" href="#">En</a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="navbar-nav mb-2 mb-lg-0 order-lg-1">
+              <!-- Services Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle d-flex align-items-center gap-1"
+                  href="#"
+                >
+                  الخدمات
+                  <i
+                    data-lucide="chevron-down"
+                    class="chevron d-none d-lg-inline"
+                  ></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">خدمة 1</a></li>
+                  <li><a class="dropdown-item" href="#">خدمة 2</a></li>
+                </ul>
+              </li>
+              <!-- Other Navbar Links -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">الية العمل</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">انضم كمختبر</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      <!-- Offcanvas Menu for Mobile -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">القائمة</h5>
+          <button type="button" class="btn" data-bs-dismiss="offcanvas">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+            <!-- Services Collapse -->
+            <li class="nav-item">
+              <button
+                class="nav-link btn w-100 text-start collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#servicesCollapse"
+              >
+                الخدمات <i data-lucide="chevron-down" class="chevron"></i>
+              </button>
+              <div class="collapse" id="servicesCollapse">
+                <ul class="list-unstyled ps-3">
+                  <li><a class="dropdown-item" href="#">خدمة 1</a></li>
+                  <li><a class="dropdown-item" href="#">خدمة 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
+            <!-- Login Button -->
+            <li class="nav-item my-3">
+              <button class="btn btn-primary w-100">تسجيل الدخول</button>
+            </li>
+            <!-- Language Selector Collapse -->
+            <li class="nav-item">
+              <button
+                class="nav-link btn w-100 text-start collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#languageCollapse"
+              >
+                AR <i data-lucide="chevron-down" class="chevron"></i>
+              </button>
+              <div class="collapse" id="languageCollapse">
+                <ul class="list-unstyled ps-3">
+                  <li><a class="dropdown-item" href="#">AR</a></li>
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Participant Page  -->
+    <section class="participant-page">
+      <div class="container pt-5">
+        <h1>انضم كمشارك</h1>
+        <form id="participant-form" class="participant-form">
+          <!-- Personal info  -->
+          <div class="personal-info container  p-3 mt-5">
+            <div class="form-section m-2">
+              <h2 class="section-title">معلومات شخصية</h2>
+              <div class="photo-upload">
+                <h3 class="subsection-title">الصورة الشخصية</h3>
+                <div class="upload-area">
+                  <div class="upload-icon">
+                    <i class="fas fa-camera"></i>
+                  </div>
+                  <p class="upload-text">اسحب الصورة هنا أو اضغط لتحميل الملفات</p>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="name">الاسم</label>
+                  <input type="text" id="name" class="form-control">
+                </div>
+                <div class="form-group half">
+                  <label for="age">العمر</label>
+                  <input type="number" id="age" class="form-control">
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="gender">النوع</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">ذكر</option>
+                      <option value="female">أنثى</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="marital-status">الحالة الاجتماعية</label>
+                  <div class="select-wrapper">
+                    <select id="marital-status" class="form-control">
+                      <option value="married">متزوج</option>
+                      <option value="single">أعزب</option>
+                      <option value="divorced">مطلق</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="children">عدد الأبناء</label>
+                  <div class="select-wrapper">
+                    <select id="children" class="form-control">
+                      <option value="0">لا يوجد</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4+">4 أو أكثر</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="language">اللغة الأم</label>
+                  <div class="select-wrapper">
+                    <select id="language" class="form-control">
+                      <option value="arabic">العربية</option>
+                      <option value="english">الإنجليزية</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="other-languages">اللغات الأخرى</label>
+                  <div class="select-wrapper">
+                    <select id="other-languages" class="form-control">
+                      <option value="english">الإنجليزية</option>
+                      <option value="french">الفرنسية</option>
+                      <option value="spanish">الإسبانية</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="nationality">الجنسية</label>
+                  <div class="select-wrapper">
+                    <select id="nationality" class="form-control">
+                      <option value="egyptian">مصري</option>
+                      <option value="saudi">سعودي</option>
+                      <option value="emirati">إماراتي</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="additional-details">تفاصيل إضافية</label>
+                <textarea id="additional-details" class="form-control textarea"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education info  -->
+          <div class="edu-info container  p-3 mt-5">
+            <div class="form-section m-2">
+              <h2 class="section-title">التعليم و الشهادات</h2>
+              
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="name">آخر شهادة تعليمية حصلت عليها</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+
+                <div class="form-group half">
+                  <label for="age">التخصص الدراسي</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="gender">المؤسسة التعليمية التي تخرج منها</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="marital-status">هل تدرس حاليًا؟</label>
+                  <div class="select-wrapper">
+                    <select id="marital-status" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="form-group">
+                <label for="additional-details">الدورات التدريبية أو الشهادات المهنية او تفاصيل اخري</label>
+                <textarea id="additional-details" class="form-control textarea"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hobbies info  -->
+          <div class="hobbies-info container  p-3 mt-5">
+            <div class="form-section m-2">
+              <h2 class="section-title">الهوايات المفضلة</h2> 
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="name">آخر شهادة تعليمية حصلت عليها</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="age">هل تمارس الرياضة بانتظام؟</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="gender">الرياضات المفضلة</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="marital-status">عدد مرات ممارسة الرياضة أسبوعيًا</label>
+                  <div class="select-wrapper">
+                    <select id="marital-status" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="additional-details">تفاصيل اضافية</label>
+                <textarea id="additional-details" class="form-control textarea"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Health info  -->
+          <div class="health-info container  p-3 mt-5">
+            <div class="form-section m-2">
+              <h2 class="section-title">معلومات عن الصحة</h2> 
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="name">هل تعاني من أي حالات صحية مزمنة؟</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="age">هل تتبع نظامًا غذائيًا خاصًا؟</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="gender">هل تمارس أنشطة لتعزيز صحتك النفسية أو البدنية؟</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="marital-status">هل تتناول أدوية بشكل منتظم؟</label>
+                  <div class="select-wrapper">
+                    <select id="marital-status" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="additional-details">تفاصيل اضافية</label>
+                <textarea id="additional-details" class="form-control textarea"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ownership info  -->
+          <div class="ownership-info container  p-3 mt-5">
+            <div class="form-section m-2">
+              <h2 class="section-title">معلومات عن المقتنيات</h2> 
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="name">نوع الهاتف الذكي الذي تستخدمه</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="age">الأجهزة الأخرى التي تملكها</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="gender">هل تملك السيارة ؟</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="marital-status">نوع السيارة / سنة التصنيع</label>
+                  <div class="select-wrapper">
+                    <select id="marital-status" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="marital-status">اشتراكات حالية</label>
+                  <div class="select-wrapper">
+                    <select id="marital-status" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="additional-details">تفاصيل اضافية</label>
+                <textarea id="additional-details" class="form-control textarea"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Health info  -->
+          <div class="bio-info container  p-3 mt-5">
+            <div class="form-section m-2">
+              <h2 class="section-title">معلومات عن العائلة والبيئة والجغرافيا</h2> 
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="name">عدد أفراد الأسرة</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="age">هل تعيش مع العائلة أم بمفردك؟</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="gender">نوع السكن</label>
+                  <div class="select-wrapper">
+                    <select id="gender" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="marital-status">بيئة السكن</label>
+                  <div class="select-wrapper">
+                    <select id="marital-status" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="marital-status">مدى القرب من وسائل المواصلات أو المراكز التجارية</label>
+                  <div class="select-wrapper">
+                    <select id="marital-status" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group half">
+                  <label for="marital-status">هل تعمل من المنزل أو من المكتب؟</label>
+                  <div class="select-wrapper">
+                    <select id="marital-status" class="form-control">
+                      <option value="male">اختيار اول</option>
+                      <option value="female">اختيار ثاني</option>
+                    </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="additional-details">تفاصيل اضافية</label>
+                <textarea id="additional-details" class="form-control textarea"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary mt-5">حفظ</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section bg-black text-white pt-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Column 1: Logo & About -->
+          <div class="col-lg-3 col-md-6">
+            <img src="logo-testtable.png" alt="logo" class="img-fluid mb-3" />
+            <p class="footer-desc">
+              دقة في الاختيار، وتميز في الأداء! نخضع خبراءنا لاختبارات صارمة،
+              لنقدم لك الأفضل على الإطلاق
+            </p>
+            <div class="footer-social d-flex gap-3 mt-3">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Important Links -->
+          <div class="col-lg-3 col-6">
+            <h5 class="footer-title">الروابط الهامة</h5>
+            <ul class="list-unstyled footer-links">
+              <li><i data-lucide="chevron-left"></i> الرئيسية</li>
+              <li><i data-lucide="chevron-left"></i> الخدمات</li>
+              <li><i data-lucide="chevron-left"></i> الية العمل</li>
+              <li><i data-lucide="chevron-left"></i> تواصل معنا</li>
+            </ul>
+          </div>
+
+          <!-- Column 3: User Links -->
+          <div class="col-lg-3 col-6">
+            <h5 class="footer-title">روابط المستخدمين</h5>
+            <ul class="list-unstyled footer-links">
+              <li><i data-lucide="chevron-left"></i> توظيف مشاركين للاختبار</li>
+              <li><i data-lucide="chevron-left"></i> انضم الينا كمختبر</li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact Info -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-title">معلومات الاتصال</h5>
+            <ul class="list-unstyled footer-links">
+              <li>
+                <i data-lucide="map-pin"></i> الرياضي، شارع الأمير سلطان، جدة
+              </li>
+              <li><i data-lucide="phone"></i> (0761) 654-123987</li>
+              <li><i data-lucide="mail"></i> info@yoursite.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Section -->
+      <div class="mt-5" style="background-color: #1f2025">
+        <div
+          class="container py-3 text-center text-white"
+          style="font-size: 14px"
+        >
+          &copy; كل الحقوق محفوظة TesTTable 2025
+        </div>
+      </div>
+    </footer>
+
+     <!-- jQuery Script -->
+    <script src="js/JQuery.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

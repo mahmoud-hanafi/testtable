@@ -1,0 +1,152 @@
+/* style-ltr.css - LTR overrides for TesTTable */
+
+/* General layout adjustments */
+body {
+    direction: ltr;
+    text-align: left;
+}
+
+/* Navbar adjustments */
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Form adjustments */
+.main-form {
+    text-align: left;
+}
+
+/* Custom select adjustments */
+.custom-select {
+    border-left: none;
+
+}
+.accordion-button::after {
+    margin-left: auto;
+    margin-right: 0;
+}
+@media (min-width: 992px) {
+.custom-select {
+
+    border-right: 1px solid #ccc;
+}
+}
+.custom-select:last-child {
+    border-right: none;
+}
+
+
+
+.custom-select-menu .option-item img {
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+/* Partners section */
+.partners .parent {
+    flex-direction: row;
+}
+
+.partners .child-one {
+    text-align: left;
+}
+
+/* Workflow section */
+.workflow-steps::before {
+    right: 10px;
+}
+.workflow-steps {
+    border-right: none;
+    border-left: 2px solid #CFCFCF;
+    padding-right: 0;
+    padding-left: 70px;
+}
+.workflow-button {
+    align-self: baseline;
+}
+.workflow-step:before {
+    left: auto;
+    right: -50px;
+}
+
+.workflow-step h3:after {
+    right: auto;
+    left: -76px;
+}
+
+/* Case study */
+.case-study-list li img {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* Footer */
+.footer-links li i,
+.footer-links li svg {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* Blog card */
+.blog-card .tags {
+    justify-content: start;
+    gap: 5px !important; 
+}
+.blog-card span {
+    font-size: 12px;
+}
+.blog-card i.fa-user,
+.blog-card i.fa-tag {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+/* Dropdown menus */
+.dropdown-menu {
+    text-align: left;
+}
+
+
+/* Mobile specific */
+@media (max-width: 991.98px) {
+    .custom-select .chevron-down {
+        margin-right: 20px;
+        margin-left: auto;
+    }
+    .workflow-steps::before {
+        right: 0;
+        width: 400px;
+        height: 400px;
+    }
+    .workflow-step {
+        max-width: 280px;
+    }
+    .workflow-steps {
+        padding-left: 0;
+        border-left: none;
+    }
+    .hero-content p,
+    .hero-content h1 {
+        text-align: left;
+    }
+    
+    .workflow-title,
+    .workflow-subtitle,
+    .experience-title,
+    .experience-subtitle {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .workflow-step:before {
+        left: auto;
+        right: -20px;
+    }
+    
+    .workflow-step h3:after {
+        right: auto;
+        left: -40px;
+    }
+}
