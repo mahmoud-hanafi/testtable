@@ -1732,101 +1732,86 @@ label {
 =     WORK METHOD PAGE      =
 ===========================*/
 .main-header {
-    text-align: center;
-    margin-bottom: 50px;
-    padding: 30px 0;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 30px 0;
 }
-
 .main-header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
 }
-
 .database-types {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
 }
-
 .db-card {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .db-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-
 .db-card .icon {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
-
 .db-card .icon img {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 }
-
 .db-card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
 }
-
 .db-card p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.8;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.8;
 }
-
 .quality-control, .quantitative-studies {
   padding: 50px;
   margin-bottom: 50px;
 }
-
 .content-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 50px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  align-items: center;
 }
-
 .content-wrapper.reverse {
-    grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
 }
-
 .text-content h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 30px;
-    line-height: 1.4;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  line-height: 1.4;
 }
-
 .text-content ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
-
 .text-content li {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
     color: #555;
     margin-bottom: 15px;
     padding-right: 25px;
     position: relative;
     line-height: 1.8;
 }
-
 .text-content li::before {
     content: "•";
     font-size: 1.5rem;
@@ -1834,7 +1819,6 @@ label {
     right: 0;
     top: -2px;
 }
-
 .illustration {
     display: flex;
     justify-content: center;
@@ -1911,7 +1895,134 @@ label {
     }
     
     .illustration svg {
-        width: 200px;
-        height: 160px;
+      width: 200px;
+      height: 160px;
     }
+}
+/*===========================
+=     Request Service       =
+===========================*/
+.form-div, .form-radios-style{
+  background-color: #fff;
+}
+.requestservice input{
+  border: 1px solid #B6B2B2;
+}
+.requestservice h2, .participant-form h2{
+  border-bottom: 1px solid #B6B2B2;
+  padding-bottom: 1rem;
+}
+.radio-option input[type="radio"] {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  accent-color: #B6B2B2;
+}
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+label {
+  cursor: pointer;
+}
+.requestservice ul{
+  padding: 0;
+}
+.requestservice ul li{
+  margin-bottom: 0.5rem !important;
+}
+.form-required::after {
+  content: "*";
+  color: #000;
+}
+.step {
+    display: none;
+}
+input[name="step"]:checked + .step {
+  display: block;
+}
+.step-nav {
+  margin-bottom: 1rem;
+}
+.step label {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #000;
+  color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+.form-radios-style input[type="radio"]{
+  display: block;
+}
+.form-radios-style label{
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #000;
+  border-radius: 0;
+}
+.price-card {
+  background-color: #222227;
+  color: #ffffff;
+  width: 300px;
+  padding: 20px;
+  text-align: right;
+  position: relative;
+}
+
+.price-symbol {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ffffff;
+  margin: 10px 0;
+}
+.item,
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 16px;
+}
+.total {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.note {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+.page-request-form{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.page-request-form .form-block{
+  flex: 2;
+}
+.page-request-form .card-block{
+  flex: 1;
 }

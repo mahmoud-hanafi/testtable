@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TesTTable</title>
+    <link rel="icon" href="fav.png" type="image/x-icon" />
+
+    <!-- Bootstrap Stylesheet -->
+    <link
+      href="CSS/bootstrap.css"
+      rel="stylesheet"
+    />
+    <!-- Owl Carousel Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="CSS/owl-carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="CSS/owl-theme.css"
+    />
+    <!-- Fontawesome Icons -->
+    <link
+    href="css/fontawesome.css"
+    rel="stylesheet"
+    />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Inline SVG Mask for Video Masking -->
+    
+    <style>
+  .step {
+    display: none;
+  }
+
+  input[name="step"]:checked + .step {
+    display: block;
+  }
+
+  .step-nav {
+    margin-bottom: 1rem;
+  }
+
+  .step label {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  form {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    max-width: 400px;
+  }
+
+</style>
+  </head>
+  <body>
+
+<form action="/submit-form" method="post">
+  <!-- Step navigation (invisible radios) -->
+  <input type="radio" name="step" id="step1" checked>
+  <div class="step">
+    <h2>Step 1: Personal Info</h2>
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <label for="step2">Next</label>
+  </div>
+
+  <input type="radio" name="step" id="step2">
+  <div class="step">
+    <h2>Step 2: Contact Info</h2>
+    <input type="email" name="email" placeholder="Your Email" required><br><br>
+    <label for="step1">Back</label>
+    <label for="step3">Next</label>
+  </div>
+
+  <input type="radio" name="step" id="step3">
+  <div class="step">
+    <h2>Step 3: Confirm & Submit</h2>
+    <p>Please review your information before submitting.</p>
+    <label for="step2">Back</label><br><br>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+</body></html>
