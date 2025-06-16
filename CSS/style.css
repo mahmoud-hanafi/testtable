@@ -652,8 +652,8 @@ a{
 @media (min-width: 992px) and (max-width: 1200px) {
   .workflow-button {
     margin-top: -35px;
-        height: 35px;
-        padding: 0 7%;
+    height: 35px;
+    padding: 0 7%;
   }
 }
 @media (max-width: 991px) {
@@ -1832,41 +1832,33 @@ label {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        padding: 15px;
-    }
-    
-    .main-header h1 {
-        font-size: 2rem;
-    }
-    
-    .database-types {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .db-card {
-        padding: 20px;
-    }
-    
-    .quality-control, .quantitative-studies {
-        padding: 30px 20px;
-    }
-    
-    .content-wrapper, .content-wrapper.reverse {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
+  .container {
+    padding: 15px;
+  }  
+  .main-header h1 {
+    font-size: 2rem;
+  }
+  .database-types {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .db-card {
+    padding: 20px;
+  }
+  .quality-control, .quantitative-studies {
+    padding: 30px 20px;
+  }
+  .content-wrapper, .content-wrapper.reverse {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
     .text-content h2 {
         font-size: 1.5rem;
     }
-    
     .text-content li {
         font-size: 1rem;
         padding-right: 20px;
     }
-    
     .illustration img {
         width: 250px;
         height: 200px;
@@ -1938,7 +1930,7 @@ label {
   color: #000;
 }
 .step {
-    display: none;
+  display: none;
 }
 input[name="step"]:checked + .step {
   display: block;
@@ -1971,12 +1963,10 @@ input[name="step"]:checked + .step {
 .price-card {
   background-color: #222227;
   color: #ffffff;
-  width: 300px;
   padding: 20px;
   text-align: right;
   position: relative;
 }
-
 .price-symbol {
   position: absolute;
   top: 20px;
@@ -1984,15 +1974,13 @@ input[name="step"]:checked + .step {
   font-size: 24px;
   color: #ffffff;
 }
-
-.title {
+.price-card .title {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: bold;
 }
-
-hr {
+.price-card hr {
   border: none;
   border-top: 1px solid #ffffff;
   margin: 10px 0;
@@ -2025,4 +2013,9 @@ hr {
 }
 .page-request-form .card-block{
   flex: 1;
+}
+@media (max-width: 767px) {
+  .page-request-form{
+    flex-direction: column;
+  }
 }

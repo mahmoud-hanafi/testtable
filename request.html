@@ -118,252 +118,250 @@
         </div>
       </div>
     </header>
-    <div class="container pt-5"> 
-      <h1>توظيف فريق المختبرين الخاص بك</h1>
-      <div class="page-request-form">
-        <div class="form-block">
-          <form id="requestservice" class="requestservice">
-                <!-- Step navigation (invisible radios) -->
-                <input type="radio" name="step" id="step1" checked>
-                <div class="step">
-                    <!-- project name  -->
-                    <div class="form-div container  p-3 mt-5">
-                        <div class="form-section m-2">
-                            <h2 class="section-title">اسم المشروع الخاص بك</h2>
-                            <h3 class="subsection-title">اسم المشروع (اختياري)</h3>
-                        <input type="text" id="projectname" name="projectname" placeholder="مثال: اختبار مستخدم، عن بُعد (بإشراف)، 30 دقيقة">
-                        </div>
-                    </div>
-                    <!-- work methods -->
-                    <div class="form-radios-style container  p-3 mt-5">
-                        <div class="form-section m-2">
-                            <h2 class="section-title">اختر طريقة عمل المختبرين</h2>
+    <section class="request-page">
+      <div class="container pt-5"> 
+        <h1>توظيف فريق المختبرين الخاص بك</h1>
+        <div class="page-request-form">
+          <div class="form-block">
+            <form id="requestservice" class="requestservice">
+                  <!-- Step navigation (invisible radios) -->
+                  <input type="radio" name="step" id="step1" checked>
+                  <div class="step">
+                      <!-- project name  -->
+                      <div class="form-div container  p-3 mt-5">
+                          <div class="form-section m-2">
+                              <h2 class="section-title">اسم المشروع الخاص بك</h2>
+                              <h3 class="subsection-title">اسم المشروع (اختياري)</h3>
+                          <input type="text" id="projectname" name="projectname" placeholder="مثال: اختبار مستخدم، عن بُعد (بإشراف)، 30 دقيقة">
+                          </div>
+                      </div>
+                      <!-- work methods -->
+                      <div class="form-radios-style container  p-3 mt-5">
+                          <div class="form-section m-2">
+                              <h2 class="section-title">اختر طريقة عمل المختبرين</h2>
+                              <div class="radio-option">
+                                  <ul>
+                                      <li class="d-flex">
+                                          <input type="radio" id="red" name="color" value="red">
+                                          <label for="red">اختبار مستخدم بإشراف</label>
+                                      </li>
+                                      <li class="d-flex">
+                                          <input type="radio" id="red" name="color" value="red">
+                                          <label for="red">اختبار مستخدم بدون إشراف</label>
+                                      </li>
+                                      <li class="d-flex">
+                                          <input type="radio" id="red" name="color" value="red">
+                                          <label for="red">ورشة عمل / مجموعة مختبرين</label>
+                                      </li>
+                                      <li class="d-flex">
+                                          <input type="radio" id="red" name="color" value="red">
+                                          <label for="red">مقابلة شخصية</label>
+                                      </li>
+                                      <li class="d-flex">
+                                          <input type="radio" id="red" name="color" value="red">
+                                          <label for="red">استبيان عبر الإنترنت</label>
+                                      </li>
+                                      <li class="d-flex">
+                                          <input type="radio" id="red" name="color" value="red">
+                                          <label for="red">دراسة يومية</label>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- project name  -->
+                      <div class="form-div container  p-3 mt-5">
+                          <div class="form-section m-2">
+                              <h2 class="section-title">حدد عدد المختبرين</h2>
+                              <h3 class="subsection-title form-required">عدد المختبرين</h3>
+                              <input type="text" id="projectname" name="projectname" placeholder="مثال: اختبار مستخدم، عن بُعد (بإشراف)، 30 دقيقة">
+                          </div>
+                      </div>
+                      <label for="step2">التالي</label>
+                  </div>
+
+                  <input type="radio" name="step" id="step2">
+                  <div class="step">
+                      <!-- Test Users  -->
+                      <div class="form-div container  p-3 mt-5">
+                        <div class="form-radios-style form-section m-2">
+                            <h2 class="section-title">اختر مجموعة مستخدمي الاختبار</h2>
                             <div class="radio-option">
-                                <ul>
-                                    <li class="d-flex">
-                                        <input type="radio" id="red" name="color" value="red">
-                                        <label for="red">اختبار مستخدم بإشراف</label>
-                                    </li>
-                                    <li class="d-flex">
-                                        <input type="radio" id="red" name="color" value="red">
-                                        <label for="red">اختبار مستخدم بدون إشراف</label>
-                                    </li>
-                                    <li class="d-flex">
-                                        <input type="radio" id="red" name="color" value="red">
-                                        <label for="red">ورشة عمل / مجموعة مختبرين</label>
-                                    </li>
-                                    <li class="d-flex">
-                                        <input type="radio" id="red" name="color" value="red">
-                                        <label for="red">مقابلة شخصية</label>
-                                    </li>
-                                    <li class="d-flex">
-                                        <input type="radio" id="red" name="color" value="red">
-                                        <label for="red">استبيان عبر الإنترنت</label>
-                                    </li>
-                                    <li class="d-flex">
-                                        <input type="radio" id="red" name="color" value="red">
-                                        <label for="red">دراسة يومية</label>
-                                    </li>
-                                </ul>
+                              <ul>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">توظيف مختبرين من فريق TesTTable </label>
+                                </li>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">فريق مختبرين خاص بك</label>
+                                </li>
+                              </ul>
                             </div>
                         </div>
+                      </div>
+                      <!-- users ages  -->
+                      <div class="form-div container  p-3 mt-5">
+                        <div class="form-radios-style form-section m-2">
+                            <h2 class="section-title">حدد الفئة العمرية</h2>
+                            <div class="radio-option">
+                              <ul>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">غير محدد</label> 
+                                </li>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">نطاق عمري واحد محدد فقط (+ 5$ لكل مستخدم اختبار)</label>
+                                </li>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">عدة نطاقات عمرية (+ 10$ لكل مستخدم اختبار)</label>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- users sex  -->
+                      <div class="form-div container  p-3 mt-5">
+                        <div class="form-radios-style form-section m-2">
+                            <h2 class="section-title">حدد نوع المختبرين</h2>
+                            <div class="radio-option">
+                              <ul>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">غير محدد</label> 
+                                </li>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">توزيع متوازن بين الجنسين (+ 5$ لكل مستخدم اختبار)</label>
+                                </li>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">توزيع محدد للجنس (+ 10$ لكل مستخدم اختبار)</label>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- users sex  -->
+                      <div class="form-div container  p-3 mt-5">
+                        <div class="form-radios-style form-group form-section m-2">
+                            <h2 class="section-title">اختر اللغة</h2>
+                            <div class="select-wrapper">
+                              <select id="gender" class="form-control">
+                                <option value="male">اختيار اول</option>
+                                <option value="female">اختيار ثاني</option>
+                              </select>
+                              <i class="fas fa-chevron-down select-arrow"></i>
+                            </div>
+                        </div>
+                      </div>
+                      <label for="step1">السابق</label>
+                      <label for="step3">التالي</label>
+                  </div>
+
+                  <input type="radio" name="step" id="step3">
+                  <div class="step">
+                    <div class="form-div container  p-3 mt-5">
+                      <div class="form-radios-style form-section m-2">
+                            <h2 class="section-title">أضف معايير فحص إضافية</h2>
+                            <div class="radio-option">
+                              <ul>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red"> غير محدد </label>
+                                </li>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">تقوم TesTTable بإعداد أسئلة الفحص نيابةً عنك (+ 10$ لكل مستخدم اختبار لكل معيار)</label>
+                                </li>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">اكتب وأعدّ أسئلة الفحص بنفسك (+ 10$ لكل مستخدم اختبار لكل سؤال)</label>
+                                </li>
+                              </ul>
+                            </div>
+                      </div>
                     </div>
                     <!-- project name  -->
-                    <div class="form-div container  p-3 mt-5">
-                        <div class="form-section m-2">
-                            <h2 class="section-title">حدد عدد المختبرين</h2>
-                            <h3 class="subsection-title form-required">عدد المختبرين</h3>
-                            <input type="text" id="projectname" name="projectname" placeholder="مثال: اختبار مستخدم، عن بُعد (بإشراف)، 30 دقيقة">
-                        </div>
-                    </div>
-                    <label for="step2">التالي</label>
-                </div>
-
-                <input type="radio" name="step" id="step2">
-                <div class="step">
-                    <!-- Test Users  -->
-                    <div class="form-div container  p-3 mt-5">
-                      <div class="form-radios-style form-section m-2">
-                          <h2 class="section-title">اختر مجموعة مستخدمي الاختبار</h2>
-                          <div class="radio-option">
-                            <ul>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red">توظيف مختبرين من فريق TesTTable </label>
-                              </li>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red">فريق مختبرين خاص بك</label>
-                              </li>
-                            </ul>
-                          </div>
-                      </div>
-                    </div>
-                    <!-- users ages  -->
-                    <div class="form-div container  p-3 mt-5">
-                      <div class="form-radios-style form-section m-2">
-                          <h2 class="section-title">حدد الفئة العمرية</h2>
-                          <div class="radio-option">
-                            <ul>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red">غير محدد</label> 
-                              </li>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red">نطاق عمري واحد محدد فقط (+ 5$ لكل مستخدم اختبار)</label>
-                              </li>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red">عدة نطاقات عمرية (+ 10$ لكل مستخدم اختبار)</label>
-                              </li>
-                            </ul>
-                          </div>
-                      </div>
-                    </div>
-                    <!-- users sex  -->
-                    <div class="form-div container  p-3 mt-5">
-                      <div class="form-radios-style form-section m-2">
-                          <h2 class="section-title">حدد نوع المختبرين</h2>
-                          <div class="radio-option">
-                            <ul>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red">غير محدد</label> 
-                              </li>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red">توزيع متوازن بين الجنسين (+ 5$ لكل مستخدم اختبار)</label>
-                              </li>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red">توزيع محدد للجنس (+ 10$ لكل مستخدم اختبار)</label>
-                              </li>
-                            </ul>
-                          </div>
-                      </div>
-                    </div>
-                    <!-- users sex  -->
-                    <div class="form-div container  p-3 mt-5">
+                    <div class="form-div projectname container  p-3 mt-5">
                       <div class="form-radios-style form-group form-section m-2">
-                          <h2 class="section-title">اختر اللغة</h2>
-                          <div class="select-wrapper">
-                            <select id="gender" class="form-control">
-                              <option value="male">اختيار اول</option>
-                              <option value="female">اختيار ثاني</option>
-                            </select>
+                        <h2 class="section-title">1. السؤال</h2>
+                        <h3 class="subsection-title">السؤال</h3>
+                        <input type="text" id="projectname" name="projectname" placeholder="مثال: اختبار مستخدم، عن بُعد (بإشراف)، 30 دقيقة">
+                        <h3 class="subsection-title mt-3">نوع السؤال</h3>
+                        <div class="select-wrapper">
+                          <select id="gender" class="form-control">
+                            <option value="male">اختيار اول</option>
+                            <option value="female">اختيار ثاني</option>
+                          </select>
                             <i class="fas fa-chevron-down select-arrow"></i>
                           </div>
                       </div>
                     </div>
-                    <label for="step1">السابق</label>
-                    <label for="step3">التالي</label>
-                </div>
-
-                <input type="radio" name="step" id="step3">
-                <div class="step">
-                  <div class="form-div container  p-3 mt-5">
-                    <div class="form-radios-style form-section m-2">
-                          <h2 class="section-title">أضف معايير فحص إضافية</h2>
-                          <div class="radio-option">
-                            <ul>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red"> غير محدد </label>
-                              </li>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red">تقوم TesTTable بإعداد أسئلة الفحص نيابةً عنك (+ 10$ لكل مستخدم اختبار لكل معيار)</label>
-                              </li>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red">اكتب وأعدّ أسئلة الفحص بنفسك (+ 10$ لكل مستخدم اختبار لكل سؤال)</label>
-                              </li>
-                            </ul>
+                    <!-- project name  -->
+                    <div class="form-div projectname container  p-3 mt-5">
+                      <div class="form-radios-style form-group form-section m-2">
+                        <h2 class="section-title">1. السؤال</h2>
+                        <h3 class="subsection-title">السؤال</h3>
+                        <input type="text" id="projectname" name="projectname" placeholder="مثال: اختبار مستخدم، عن بُعد (بإشراف)، 30 دقيقة">
+                        <h3 class="subsection-title mt-3">نوع السؤال</h3>
+                        <div class="select-wrapper">
+                          <select id="gender" class="form-control">
+                            <option value="male">اختيار اول</option>
+                            <option value="female">اختيار ثاني</option>
+                          </select>
+                            <i class="fas fa-chevron-down select-arrow"></i>
                           </div>
+                      </div>
                     </div>
-                  </div>
-                  <!-- project name  -->
-                  <div class="form-div projectname container  p-3 mt-5">
-                    <div class="form-radios-style form-group form-section m-2">
-                      <h2 class="section-title">1. السؤال</h2>
-                      <h3 class="subsection-title">السؤال</h3>
-                      <input type="text" id="projectname" name="projectname" placeholder="مثال: اختبار مستخدم، عن بُعد (بإشراف)، 30 دقيقة">
-                      <h3 class="subsection-title mt-3">نوع السؤال</h3>
-                      <div class="select-wrapper">
-                        <select id="gender" class="form-control">
-                          <option value="male">اختيار اول</option>
-                          <option value="female">اختيار ثاني</option>
-                        </select>
-                          <i class="fas fa-chevron-down select-arrow"></i>
-                        </div>
+                    <div class="form-div container  p-3 mt-5">
+                      <div class="form-radios-style form-section m-2">
+                            <h2 class="section-title">استبعاد خبراء</h2>
+                            <div class="radio-option">
+                              <ul>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red"> غير محدد </label>
+                                </li>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">استبعد خبراء</label>
+                                </li>
+                              </ul>
+                            </div>
+                      </div>
                     </div>
+                    <label for="step2">السابق</label><br><br>
+                    <button type="submit">Submit</button>
                   </div>
-                  <!-- project name  -->
-                  <div class="form-div projectname container  p-3 mt-5">
-                    <div class="form-radios-style form-group form-section m-2">
-                      <h2 class="section-title">1. السؤال</h2>
-                      <h3 class="subsection-title">السؤال</h3>
-                      <input type="text" id="projectname" name="projectname" placeholder="مثال: اختبار مستخدم، عن بُعد (بإشراف)، 30 دقيقة">
-                      <h3 class="subsection-title mt-3">نوع السؤال</h3>
-                      <div class="select-wrapper">
-                        <select id="gender" class="form-control">
-                          <option value="male">اختيار اول</option>
-                          <option value="female">اختيار ثاني</option>
-                        </select>
-                          <i class="fas fa-chevron-down select-arrow"></i>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="form-div container  p-3 mt-5">
-                    <div class="form-radios-style form-section m-2">
-                          <h2 class="section-title">أضف معايير فحص إضافية</h2>
-                          <div class="radio-option">
-                            <ul>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red"> غير محدد </label>
-                              </li>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red">تقوم TesTTable بإعداد أسئلة الفحص نيابةً عنك (+ 10$ لكل مستخدم اختبار لكل معيار)</label>
-                              </li>
-                              <li class="d-flex">
-                                <input type="radio" id="red" name="color" value="red">
-                                <label for="red">اكتب وأعدّ أسئلة الفحص بنفسك (+ 10$ لكل مستخدم اختبار لكل سؤال)</label>
-                              </li>
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                  <label for="step2">السابق</label><br><br>
-                  <button type="submit">Submit</button>
-                </div>
-          </form> 
-        </div>
-        <div class="card-block mt-5">
-          <div class="price-card">
-            <div class="price-symbol">$</div>
-            <h2 class="title">نظرة عامة على العرض</h2>
-            <hr />
-
-            <div class="item participant-value"><span>6 مشاركين</span><span>390</span></div>
-            <div class="item age-value"><span>الفئة العمرية</span><span>60</span></div>
-            <div class="item sex-value"><span>النوع</span><span>60</span></div>
-            <div class="item question "><span>الأسئلة</span><span>60</span></div>
-            <div class="item requirements"><span>متطلبات الجهاز</span><span>90</span></div>
-
-            <hr />
-
-            <div class="total"><span>الاجمالي</span><span>$ 660.00</span></div>
-
-            <p class="note">
-              يشمل السعر الجوائز لمستخدم الاختبار.<br />
-              هذا الموقع محمي بواسطة reCAPTCHA وتطبق سياسة الخصوصية وشروط الخدمة الخاصة بـ Google.
-            </p>
+            </form> 
           </div>
+          <div class="card-block mt-5">
+            <div class="price-card">
+              <div class="price-symbol">$</div>
+              <h2 class="title">نظرة عامة على العرض</h2>
+              <hr />
+
+              <div class="item participant-value"><span>6 مشاركين</span><span>390</span></div>
+              <div class="item age-value"><span>الفئة العمرية</span><span>60</span></div>
+              <div class="item sex-value"><span>النوع</span><span>60</span></div>
+              <div class="item question "><span>الأسئلة</span><span>60</span></div>
+              <div class="item requirements"><span>متطلبات الجهاز</span><span>90</span></div>
+
+              <hr />
+
+              <div class="total"><span>الاجمالي</span><span>$ 660.00</span></div>
+
+              <p class="note">
+                يشمل السعر الجوائز لمستخدم الاختبار.<br />
+                هذا الموقع محمي بواسطة reCAPTCHA وتطبق سياسة الخصوصية وشروط الخدمة الخاصة بـ Google.
+              </p>
+            </div>
+        </div>
       </div>
-    </div>
+    </section>
     <!-- Footer Section -->
     <footer class="footer-section bg-black text-white pt-5">
       <div class="container">
