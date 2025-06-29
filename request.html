@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>TesTTable</title>
     <link rel="icon" href="fav.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
 
     <!-- Bootstrap Stylesheet -->
     <link
@@ -124,9 +125,9 @@
         <div class="page-request-form">
           <div class="form-block">
             <form id="requestservice" class="requestservice">
-                  <!-- Step navigation (invisible radios) -->
-                  <input type="radio" name="step" id="step1" checked>
-                  <div class="step">
+              <!-- Step navigation (invisible radios) -->
+              <input type="radio" name="step" id="step1" checked>
+              <div class="step">
                       <!-- project name  -->
                       <div class="form-div container  p-3 mt-5">
                           <div class="form-section m-2">
@@ -178,10 +179,10 @@
                           </div>
                       </div>
                       <label for="step2">التالي</label>
-                  </div>
+              </div>
 
-                  <input type="radio" name="step" id="step2">
-                  <div class="step">
+              <input type="radio" name="step" id="step2">
+              <div class="step">
                       <!-- Test Users  -->
                       <div class="form-div container  p-3 mt-5">
                         <div class="form-radios-style form-section m-2">
@@ -259,10 +260,10 @@
                       </div>
                       <label for="step1">السابق</label>
                       <label for="step3">التالي</label>
-                  </div>
+              </div>
 
-                  <input type="radio" name="step" id="step3">
-                  <div class="step">
+              <input type="radio" name="step" id="step3">
+              <div class="step">
                     <div class="form-div container  p-3 mt-5">
                       <div class="form-radios-style form-section m-2">
                             <h2 class="section-title">أضف معايير فحص إضافية</h2>
@@ -333,9 +334,211 @@
                             </div>
                       </div>
                     </div>
-                    <label for="step2">السابق</label><br><br>
-                    <button type="submit">Submit</button>
+                    <label for="step2">السابق</label>
+                    <label for="step4">التالي</label>
+              </div>
+
+              <input type="radio" name="step" id="step4">
+              <div class="step">
+                      <div class="form-div container  p-3 mt-5">
+                      <div class="form-radios-style form-section m-2">
+                            <h2 class="section-title">حدد الجهاز المطلوب للمشاركة</h2>
+                            <div class="radio-option">
+                              <ul>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red"> غير محدد </label>
+                                </li>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">حدد الجهاز المطلوب للمشاركة</label>
+                                </li>
+                              </ul>
+                            </div>
+                      </div>
+                    </div>
+                    
+                    <div class="form-div container  p-3 mt-5">
+                      <div class="form-radios-style form-section m-2">
+                            <h2 class="section-title">حدد أداتك عن بُعد وتفاصيل الوصول</h2>
+                            <div class="radio-option">
+                              <ul>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red"> توفير رابط مشاركة واحد لجميع الجلسات </label>
+                                </li>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red" >توفير روابط مشاركة فردية لكل جلسة</label>
+                                </li>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red"> سأرسل جميع تفاصيل المشاركة مباشرةً إلى مستخدمي الاختبار لاحقًا </label>
+                                </li>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">سأرسل جميع تفاصيل المشاركة إلى TesTTable لاحقًا</label>
+                                </li>
+                              </ul>
+                            </div>
+                      </div>
+                    </div>
+                    
+                    <div class="form-div projectname container  p-3 mt-5">
+                      <div class="form-radios-style form-group form-section m-2">
+                        <h2 class="section-title">1. السؤال</h2>
+                        <h3 class="subsection-title">السؤال</h3>
+                        <input type="text" id="projectname" name="projectname" placeholder="مثال: اختبار مستخدم، عن بُعد (بإشراف)، 30 دقيقة">
+                        <h3 class="subsection-title mt-3">نوع السؤال</h3>
+                        <div class="select-wrapper">
+                          <select id="gender" class="form-control">
+                            <option value="male">اختيار اول</option>
+                            <option value="female">اختيار ثاني</option>
+                          </select>
+                            <i class="fas fa-chevron-down select-arrow"></i>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="form-div container  p-3 mt-5">
+                      <div class="form-radios-style form-section m-2">
+                            <h2 class="section-title">استبعاد خبراء</h2>
+                            <div class="radio-option">
+                              <ul>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red"> غير محدد </label>
+                                </li>
+                                <li class="d-flex">
+                                  <input type="radio" id="red" name="color" value="red">
+                                  <label for="red">استبعد خبراء</label>
+                                </li>
+                              </ul>
+                            </div>
+                      </div>
+                    </div>
+
+                    <div class="form-div container  p-3 mt-5">
+                      <div class="form-radios-style form-group form-section m-2">
+                          <h2 class="section-title">حدد المدة، والتاريخ، والفترة الزمنية</h2>
+                          <div class="select-wrapper">
+                            <h3 class="subsection-title mt-3">المدة لكل جلسة</h3>
+                            <select id="gender" class="form-control">
+                              <option value="male">اختيار اول</option>
+                              <option value="female">اختيار ثاني</option>
+                            </select>
+                            <i class="fas fa-chevron-down select-arrow"></i>
+                          </div>
+                          <div class="mb-3 mt-3">
+                            <h3 class="subsection-title mt-3">التاريخ</h3>
+                            <input type="text" class="form-control" id="date" placeholder="YYYY-MM-DD">
+                          </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="form-div container  p-3 mt-5">
+                      <div class="form-radios-style form-section m-2">
+                        <h2 class="section-title">معلومات إضافية للمختبرين</h2>
+                        <h3  class="subsection-title mt-3"> تعليمات للمختبرين </h3>     
+                        <textarea id="message" name="message" rows="4" cols="100" placeholder="اكتب التعليمات هنا"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="form-div container  p-3 mt-5">
+                      <div class="form-radios-style form-section m-2">
+                        <h2 class="section-title">معلومات إضافية للمختبرين</h2>
+                        <h3  class="subsection-title mt-3"> تعليمات للمختبرين </h3>     
+                        <textarea id="message" name="message" rows="4" cols="100" placeholder="اكتب التعليمات هنا"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="form-div container  p-3 mt-5">
+                      <div class="form-radios-style form-section m-2">
+                        <h2 class="section-title">معلومات إضافية ل TesTTable</h2>
+                        <h3  class="subsection-title mt-3"> تعليمات اضافية</h3>     
+                        <textarea id="message" name="message" rows="4" cols="100" placeholder="اكتب التعليمات هنا"></textarea>
+                      </div>
+                    </div>
+
+                    <label for="step3">السابق</label>
+                    <label for="step5">التالي</label>
+              </div>
+
+              <!-- Step navigation (invisible radios) -->
+              <input type="radio" name="step" id="step5" checked>
+              <div class="step">
+                <!-- project name  -->
+                <div class="form-div container  p-3 mt-5">
+                  <div class="form-section m-2">
+                    <h2 class="section-title">إدارة الحوافز</h2>
+                    <p>تقوم TestingTime بالتعامل مع دفع الحوافز لمستخدمي الاختبار</p>
+                    <h3 class="subsection-title">قيمة الحافز لكل مستخدم اختبار</h3>
+                    <input type="text" id="projectname" name="projectname" placeholder="">
                   </div>
+                </div>
+                <!-- project name  -->
+                <div class="form-radios-style working-way container  p-3 mt-5">
+                          <div class="form-section m-2">
+                              <h2 class="section-title">اختر طريقة عمل المختبرين</h2>
+                              <div class="radio-option">
+                                  <ul>
+                                      <li class="d-flex">
+                                        <input type="radio" id="red" name="color" value="red">
+                                        <label for="red">اختبار مستخدم بإشراف</label>
+                                      </li>
+                                      <div class="radio-cards">
+
+                                        <div class="radio-card">
+                                          <input type="radio" id="option1" name="location">
+                                          <label for="option3">
+                                            <h3>عن بُعد</h3>
+                                            <p>يشارك مستخدمو الاختبار عبر الإنترنت في دراستك. يمكنك تحديد الأداة المستخدمة في قسم التخطيط.</p>
+                                          </label>
+                                        </div>
+
+                                        <div class="radio-card">
+                                          <input type="radio" id="option2" name="location">
+                                          <label for="option2">
+                                            <h3>في منزل مستخدم الاختبار</h3>
+                                            <p>تُجرى الدراسة في منزل أو مكان عمل مستخدم الاختبار. عليك أن تخطط للرحلة بنفسك.</p>
+                                          </label>
+                                        </div>
+                                        <div class="radio-card">
+                                          <input type="radio" id="option3" name="location">
+                                          <label for="option1">
+                                            <h3>في موقعك</h3>
+                                            <p>تُجرى الدراسة في شركتك أو في مختبر قابلية الاستخدام أو ما شابه. يُرجى التأكد من أن الموقع سهل الوصول إليه باستخدام وسائل النقل العامة.</p>
+                                          </label>
+                                        </div>
+                                      </div>
+                                      <li class="d-flex">
+                                          <input type="radio" id="red" name="color" value="red">
+                                          <label for="red">اختبار مستخدم بدون إشراف</label>
+                                      </li>
+                                      <li class="d-flex">
+                                          <input type="radio" id="red" name="color" value="red">
+                                          <label for="red">ورشة عمل / مجموعة مختبرين</label>
+                                      </li>
+                                      <li class="d-flex">
+                                          <input type="radio" id="red" name="color" value="red">
+                                          <label for="red">مقابلة شخصية</label>
+                                      </li>
+                                      <li class="d-flex">
+                                          <input type="radio" id="red" name="color" value="red">
+                                          <label for="red">استبيان عبر الإنترنت</label>
+                                      </li>
+                                      <li class="d-flex">
+                                          <input type="radio" id="red" name="color" value="red">
+                                          <label for="red">دراسة يومية</label>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                <label for="step2">التالي</label>
+              </div>
+
             </form> 
           </div>
           <div class="card-block mt-5">
@@ -437,5 +640,11 @@
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      flatpickr("#date", {
+        dateFormat: "Y-m-d"
+      });
+    </script>
   </body>
 </html>

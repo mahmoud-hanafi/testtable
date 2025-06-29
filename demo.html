@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Radio Card Style</title>
+  <style>
+    .radio-cards {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .radio-card {
+      flex: 1;
+      max-width: 300px;
+      padding: 20px;
+      border-radius: 8px;
+      border: 2px solid #eee;
+      background-color: #f7f7f7;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      box-shadow: 0 0 17px rgba(0, 0, 0, 0.05), inset 0 0 94px rgba(0, 0, 0, 0.16);
+    }
+    .radio-card input[type="radio"] {
+      display: none;
+    }
+    .radio-card label {
+      display: block;
+      cursor: pointer;
+    }
+    .radio-card:hover {
+      border-color: #999;
+    }
+    .radio-card label::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid black;
+      background-color: white;
+    }
+    .radio-card:has(input[type="radio"]:checked) {
+      background-color: #1d1d1f;
+      color: white;
+      border-color: #000;
+    }
+    .radio-card:has(input[type="radio"]:checked) label::before {
+      border: 4px solid white;
+      background-color: black;
+    }
+    .radio-card label h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .radio-card label p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<div class="radio-cards">
+
+  <div class="radio-card">
+    <input type="radio" id="option1" name="location">
+    <label for="option3">
+      <h3>عن بُعد</h3>
+      <p>يشارك مستخدمو الاختبار عبر الإنترنت في دراستك. يمكنك تحديد الأداة المستخدمة في قسم التخطيط.</p>
+    </label>
+  </div>
+
+  <div class="radio-card">
+    <input type="radio" id="option2" name="location">
+    <label for="option2">
+      <h3>في منزل مستخدم الاختبار</h3>
+      <p>تُجرى الدراسة في منزل أو مكان عمل مستخدم الاختبار. عليك أن تخطط للرحلة بنفسك.</p>
+    </label>
+  </div>
+
+  <div class="radio-card">
+    <input type="radio" id="option3" name="location">
+    <label for="option1">
+      <h3>في موقعك</h3>
+      <p>تُجرى الدراسة في شركتك أو في مختبر قابلية الاستخدام أو ما شابه. يُرجى التأكد من أن الموقع سهل الوصول إليه باستخدام وسائل النقل العامة.</p>
+    </label>
+  </div>
+
+</div>
+
+</body>
+</html>
