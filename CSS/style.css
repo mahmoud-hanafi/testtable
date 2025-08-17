@@ -2212,3 +2212,24 @@ label.form-check-label {
 .request-page .footer-section{
   margin-top: 0;
 }
+
+.hero-video-container {
+           width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-mask: url('#custom-mask');
+            mask: url('#custom-mask');
+            -webkit-mask-size: 100% 100%;
+            mask-size: 100% 100%;
+  }
+
+
+
+@media (max-width: 991px) {
+  .hero-video-container {
+            -webkit-mask: unset !important;
+            mask: unset !important;
+            -webkit-mask-size: unset !important;
+            mask-size: unset !important;
+  }
+}

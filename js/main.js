@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (video) {
     video.addEventListener("ended", () => {
       const container = document.querySelector(".hero-video-container");
-      if (container) container.remove();
+      // if (container) container.remove();
 
       const heroSection = document.querySelector(".hero-section");
       if (heroSection) heroSection.style.backgroundColor = "black";
@@ -85,7 +85,18 @@ document.addEventListener('DOMContentLoaded', function () {
     autoplayHoverPause: true,
     nav: false,
     dots: false,
-    rtl: isRTL // Set RTL based on document direction
+    rtl: isRTL, // Set RTL based on document direction
+    responsive: {
+      0: {
+        items: 3 // Small mobile screens
+      },
+      480: {
+        items: 4 // large mobile screens
+      },
+      768: {
+        items: 5 // <= 768px or heigher will get this value
+      }
+    }
   });
 
   // =================== [ Additional RTL/LTR Adjustments ] ===================
