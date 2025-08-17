@@ -132,1336 +132,1274 @@
     </header>
 
     <section class="step-form">
-        <div class="container py-5">
-        <div class="row gy-4">
+    <div class="container py-5">
+      <div class="row gy-4">
 
-            <div class="col-12">
+        <div class="col-12">
 
-            <div class="main-title">
-                <h2 class="fw-bold">توظيف فريق المشاركين الخاص بك</h2>
-            </div>
+          <div class="main-title">
+            <h2 class="fw-bold">توظيف فريق المشاركين الخاص بك</h2>
+          </div>
 
-            </div>
-            
-
-            <form class="col-md-9" action method="post">
-            <div class="step" id="step-1">
-
-                <!-- ========== Start Section ========== -->
-
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal ">اسم المشروع الخاص بك</h6>
-                    <hr>
-                </div>
-                <label for="project-name" class="form-label fw-bold" data-optional="(اختياري)">اسم المشروع</label>
-                <input type="text" id="project-name" name="project-name" class="form-control mb-2"
-                    placeholder="مثال: اختبار مستخدم عن بعد (بإشراف)، 30 دقيقة">
-
-                </div>
-
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal">اختر طريقة عمل المشاركين</h6>
-                    <hr>
-                </div>
-
-                <div class="radio-card">
-
-                    <div class="mb-2 d-flex align-items-center gap-1">
-                    <input type="radio" checked name="main-method-contact" data-min="20" data-online="false"
-                        value="اختبار مستخدم بإشراف" id="supervisedOption" />
-                    <label class="form-check-label" for="supervisedOption">
-                        اختبار مستخدم بإشراف </label>
-                    </div>
-
-                    <div class="sub-options">
-                    <div class="d-grid grid-col-3  mb-2">
-
-                        <div class="option-card sub-choice selected">
-                        <input type="radio" name="sub-method-1" id="sub-remote" checked value="remote" />
-                        <label for="sub-remote">
-                            <p> عن بعد </p>
-                            <div class="small">
-                            يشارك مستخدمو الاختبار عبر الإنترنت في دراستك. يمكنك
-                            تحديد الأداة المستخدمة في قسم التخطيط.
-                            </div>
-                        </label>
-                        </div>
-
-
-                        <div class="option-card sub-choice">
-                        <input type="radio" name="sub-method-1" id="sub-onsite" value="onsite" />
-                        <label for="sub-onsite">
-                            <p>في موقعك</p>
-                            <div class="small">
-                            تُجرى الدراسة في شركتك أو في مختبر قابلية الاستخدام
-                            أو ما شابه. يُرجى التأكد من أن الموقع سهل
-                            الوصول إليه
-                            باستخدام وسائل النقل العامة.
-                            </div>
-                        </label>
-                        </div>
-
-
-                        <div class="option-card sub-choice">
-                        <input type="radio" name="sub-method-1" id="sub-home" value="home" />
-                        <label for="sub-home">
-                            <p>في منزل مستخدم الاختبار</p>
-                            <div class="small">
-                            تُجرى الدراسة في منزل أو مكان عمل مستخدم الاختبار.
-                            عليك أن تخطط للرحلة بنفسك.
-                            </div>
-                        </label>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                
-                
-                <div class="mb-2 d-flex align-items-center gap-1">
-                    <input type="radio" value="اختبار مستخدم بدون إشراف" name="main-method-contact" data-min="10"
-                    data-online="true" id="unsupervisedOption" />
-                    <label class="form-check-label" for="unsupervisedOption">اختبار مستخدم بدون إشراف</label>
-                </div>
-
-                <div class="radio-card">
-
-                    <div class="mb-2 d-flex align-items-center gap-1">
-                    <input type="radio" value="ورشة عمل / مجموعة مشاركين" name="main-method-contact" data-min="5"
-                        data-online="false" id="groupOption" />
-                    <label class="form-check-label" for="groupOption">ورشة عمل /
-                        مجموعة مشاركين</label>
-                    </div>
-
-                    <div class="hidden sub-options">
-                    <div class="d-grid grid-col-2  mb-2">
-
-                        <div class="option-card sub-choice selected">
-                        <input type="radio" name="sub-method-2" id="sub-remote" checked value="remote" />
-                        <label for="sub-remote">
-                            <p>عن بعد</p>
-                            <div class="small">
-                            يشارك مستخدمو الاختبار عبر الإنترنت في دراستك. يمكنك
-                            تحديد الأداة المستخدمة في قسم التخطيط.
-                            </div>
-                        </label>
-                        </div>
-
-                        <!-- في موقعك -->
-                        <div class="option-card sub-choice">
-                        <input type="radio" name="sub-method-2" id="sub-onsite" value="onsite" />
-                        <label for="sub-onsite">
-                            <p>في موقعك</p>
-                            <div class="small">
-                            تُجرى الدراسة في شركتك أو في مختبر قابلية الاستخدام
-                            أو ما شابه. يُرجى التأكد من أن الموقع سهل
-                            الوصول إليه
-                            باستخدام وسائل النقل العامة.
-                            </div>
-                        </label>
-                        </div>
-
-                    </div>
-                    </div>
-                </div>
-
-                <div class="radio-card">
-
-                    <div class="mb-2 d-flex align-items-center gap-1">
-                    <input type="radio" value="مقابلة شخصية" name="main-method-contact" data-min="3" data-online="false"
-                        id="interviewOption" />
-                    <label class="form-check-label" for="interviewOption">مقابلة
-                        شخصية</label>
-                    </div>
-
-                    <div class="hidden  sub-options">
-                    <div class="d-grid grid-col-3 mb-2">
-
-                        <div class="option-card sub-choice selected">
-                        <input type="radio" name="sub-method-3" id="sub-remote" checked value="remote" />
-                        <label for="sub-remote">
-                            <p>عن بعد</p>
-                            <div class="small">
-                            يشارك مستخدمو الاختبار عبر الإنترنت في دراستك. يمكنك
-                            تحديد الأداة المستخدمة في قسم التخطيط.
-                            </div>
-                        </label>
-                        </div>
-
+        </div>
         
-                        
-                        <div class="option-card sub-choice">
-                        <input type="radio" name="sub-method-3" id="sub-onsite" value="onsite" />
-                        <label for="sub-onsite">
-                            <p>في موقعك</p>
-                            <div class="small">
-                            تُجرى الدراسة في شركتك أو في مختبر قابلية الاستخدام
-                            أو ما شابه. يُرجى التأكد من أن الموقع سهل
-                            الوصول إليه
-                            باستخدام وسائل النقل العامة.
-                            </div>
-                        </label>
-                        </div>
 
-                
-                        
-                        <div class="option-card sub-choice">
-                        <input type="radio" name="sub-method-3" id="sub-home" value="home" />
-                        <label for="sub-home">
-                            <p>في منزل مستخدم الاختبار</p>
-                            <div class="small">
-                            تُجرى الدراسة في منزل أو مكان عمل مستخدم الاختبار.
-                            عليك أن تخطط للرحلة بنفسك.
-                            </div>
-                        </label>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="mb-2 d-flex align-items-center gap-1">
-                    <input type="radio" value="استبيان عبر الإنترنت" name="main-method-contact" data-min="9"
-                    data-online="true" id="surveyOption" />
-                    <label class="form-check-label" for="surveyOption">استبيان عبر
-                    الإنترنت</label>
-                </div>
+        <form class="col-md-9" action method="post">
+          <div class="step" id="step-1">
 
-                </div>
+            <!-- ========== Start Section ========== -->
 
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal"> حدد عدد المشاركين </h6>
-                    <hr>
-                </div>
-                <label for="numbertester" class="form-label fw-bold">عدد
-                    المشاركين * </label>
-                <input type="number" id="numbertester" required name="numberTester" min="1" value="6"
-                    class="text-start form-control mb-2" placeholder>
-
-                </div>
-
-                <button type="button" class="btn btn-dark px-4 py-2 rounded-0 next-btn">التالي</button>
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal ">اسم المشروع الخاص بك</h6>
+                <hr>
+              </div>
+              <label for="project-name" class="form-label fw-bold" data-optional="(اختياري)">اسم المشروع</label>
+              <input type="text" id="project-name" name="project-name" class="form-control mb-2"
+                placeholder="مثال: اختبار مستخدم عن بعد (بإشراف)، 30 دقيقة">
 
             </div>
-            <!-- ========== End Section ========== -->
-            <div class="d-none step" id="step-2">
 
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal">
-                    اختر طريقة استقطاب المشاركين
-                    </h6>
-                    <hr>
-                </div>
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal">اختر طريقة عمل المشاركين</h6>
+                <hr>
+              </div>
+
+              <div class="radio-card">
 
                 <div class="mb-2 d-flex align-items-center gap-1">
-                    <input type="radio" value="توظيف مشاركين من فريق TesTTable" name="test-user-group" checked
-                    id="test-user-group-team-1" />
-                    <label class="form-check-label mb-0" for="test-user-group-team-1">
-                    توظيف مشاركين من فريق TesTTable
-                    </label>
+                  <input type="radio" checked name="main-method-contact" data-min="20" data-online="false"
+                    value="اختبار مستخدم بإشراف" id="supervisedOption" />
+                  <label class="form-check-label" for="supervisedOption">
+                    اختبار مستخدم بإشراف </label>
                 </div>
+
+                <div class="sub-options">
+                  <div class="d-grid grid-col-3  mb-2">
+
+                    <div class="option-card sub-choice selected">
+                      <input type="radio" name="sub-method-1" id="sub-remote" checked value="remote" />
+                      <label for="sub-remote">
+                        <p> عن بعد </p>
+                        <div class="small">
+                          يشارك مستخدمو الاختبار عبر الإنترنت في دراستك. يمكنك
+                          تحديد الأداة المستخدمة في قسم التخطيط.
+                        </div>
+                      </label>
+                    </div>
+
+
+                    <div class="option-card sub-choice">
+                      <input type="radio" name="sub-method-1" id="sub-onsite" value="onsite" />
+                      <label for="sub-onsite">
+                        <p>في موقعك</p>
+                        <div class="small">
+                          تُجرى الدراسة في شركتك أو في مشارك قابلية الاستخدام
+                          أو ما شابه. يُرجى التأكد من أن الموقع سهل
+                          الوصول إليه
+                          باستخدام وسائل النقل العامة.
+                        </div>
+                      </label>
+                    </div>
+
+
+                    <div class="option-card sub-choice">
+                      <input type="radio" name="sub-method-1" id="sub-home" value="home" />
+                      <label for="sub-home">
+                        <p>في منزل مستخدم الاختبار</p>
+                        <div class="small">
+                          تُجرى الدراسة في منزل أو مكان عمل مستخدم الاختبار.
+                          عليك أن تخطط للرحلة بنفسك.
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              
+              <div class="mb-2 d-flex align-items-center gap-1">
+                <input type="radio" value="اختبار مستخدم بدون إشراف" name="main-method-contact" data-min="10"
+                  data-online="true" id="unsupervisedOption" />
+                <label class="form-check-label" for="unsupervisedOption">اختبار مستخدم بدون إشراف</label>
+              </div>
+
+              <div class="radio-card">
 
                 <div class="mb-2 d-flex align-items-center gap-1">
-                    <input type="radio" value="فريق مشاركين خاص بك" name="test-user-group" id="test-user-group-team-2" />
-                    <label class="form-check-label mb-0" for="test-user-group-team-2">
-                    فريق مشاركين خاص بك
-                    </label>
-                </div>
-                </div>
-
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal"> حدد الفئة العمرية </h6>
-                    <hr>
+                  <input type="radio" value="ورشة عمل / مجموعة مشاركين" name="main-method-contact" data-min="5"
+                    data-online="false" id="groupOption" />
+                  <label class="form-check-label" for="groupOption">ورشة عمل /
+                    مجموعة مشاركين</label>
                 </div>
 
-                <div class="mb-3 radio-card">
-                    <input type="radio" value="غير محدد" name="age-selection-method" checked id="age-selection-none" />
-                    <label class="form-check-label" for="age-selection-none"> غير
-                    محدد </label>
-                </div>
+                <div class="hidden sub-options">
+                  <div class="d-grid grid-col-2  mb-2">
 
-                <div class="mb-3 radio-card">
-                    <input type="radio" value="نطاق عمري واحد محدد فقط" name="age-selection-method"
-                    id="age-selection-single" data-show="#single-age-range" />
-                    <label class="form-check-label" for="age-selection-single">
-                    نطاق عمري واحد محدد فقط (+ 5
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
-                        <path fill="#000" class="cls-1"
-                            d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
-                        <path fill="#000" class="cls-1"
-                            d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
-                        </svg>
-                    </span> لكل مستخدم اختبار)
-                    </label>
-
-                    <div id="single-age-range" class="hidden sub-options">
-                    <div class="row g-4 align-items-start ">
-
-                        <div class="col-md-4">
-                        <label class="form-label" for="single-from">من</label>
-                        <input type="number" class="form-control" name="single-from" id="single-from"
-                            placeholder="مثلاً ١٨" />
+                    <div class="option-card sub-choice selected">
+                      <input type="radio" name="sub-method-2" id="sub-remote" checked value="remote" />
+                      <label for="sub-remote">
+                        <p>عن بعد</p>
+                        <div class="small">
+                          يشارك مستخدمو الاختبار عبر الإنترنت في دراستك. يمكنك
+                          تحديد الأداة المستخدمة في قسم التخطيط.
                         </div>
-                        <div class="col-md-4">
-                        <label class="form-label" for="single-to">إلى</label>
-                        <input type="number" class="form-control" name="single-to" id="single-to"
-                            placeholder="مثلاً ٦٥" />
+                      </label>
+                    </div>
+
+                    <!-- في موقعك -->
+                    <div class="option-card sub-choice">
+                      <input type="radio" name="sub-method-2" id="sub-onsite" value="onsite" />
+                      <label for="sub-onsite">
+                        <p>في موقعك</p>
+                        <div class="small">
+                          تُجرى الدراسة في شركتك أو في مشارك قابلية الاستخدام
+                          أو ما شابه. يُرجى التأكد من أن الموقع سهل
+                          الوصول إليه
+                          باستخدام وسائل النقل العامة.
                         </div>
-                        <div class="col-md-4">
-                        <label class="form-label" for="single-amount">العدد</label>
-                        <input type="number" class="form-control amount-input" disabled name="single-amount"
-                            id="single-amount" placeholder="مثلاً ٦" />
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="radio-card">
+
+                <div class="mb-2 d-flex align-items-center gap-1">
+                  <input type="radio" value="مقابلة شخصية" name="main-method-contact" data-min="3" data-online="false"
+                    id="interviewOption" />
+                  <label class="form-check-label" for="interviewOption">مقابلة
+                    شخصية</label>
+                </div>
+
+                <div class="hidden  sub-options">
+                  <div class="d-grid grid-col-3 mb-2">
+
+                    <div class="option-card sub-choice selected">
+                      <input type="radio" name="sub-method-3" id="sub-remote" checked value="remote" />
+                      <label for="sub-remote">
+                        <p>عن بعد</p>
+                        <div class="small">
+                          يشارك مستخدمو الاختبار عبر الإنترنت في دراستك. يمكنك
+                          تحديد الأداة المستخدمة في قسم التخطيط.
+                        </div>
+                      </label>
+                    </div>
+
+      
+                    
+                    <div class="option-card sub-choice">
+                      <input type="radio" name="sub-method-3" id="sub-onsite" value="onsite" />
+                      <label for="sub-onsite">
+                        <p>في موقعك</p>
+                        <div class="small">
+                          تُجرى الدراسة في شركتك أو في مشارك قابلية الاستخدام
+                          أو ما شابه. يُرجى التأكد من أن الموقع سهل
+                          الوصول إليه
+                          باستخدام وسائل النقل العامة.
+                        </div>
+                      </label>
+                    </div>
+
+            
+                    
+                    <div class="option-card sub-choice">
+                      <input type="radio" name="sub-method-3" id="sub-home" value="home" />
+                      <label for="sub-home">
+                        <p>في منزل مستخدم الاختبار</p>
+                        <div class="small">
+                          تُجرى الدراسة في منزل أو مكان عمل مستخدم الاختبار.
+                          عليك أن تخطط للرحلة بنفسك.
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2 d-flex align-items-center gap-1">
+                <input type="radio" value="استبيان عبر الإنترنت" name="main-method-contact" data-min="9"
+                  data-online="true" id="surveyOption" />
+                <label class="form-check-label" for="surveyOption">استبيان عبر
+                  الإنترنت</label>
+              </div>
+
+            </div>
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal"> حدد عدد المشاركين </h6>
+                <hr>
+              </div>
+              <label for="numbertester" class="form-label fw-bold">عدد
+                المشاركين * </label>
+              <input type="number" id="numbertester" required name="numberTester" min="1" value="6"
+                class="text-start form-control mb-2" placeholder>
+
+            </div>
+
+            <button type="button" class="btn btn-dark px-4 py-2 rounded-0 next-btn">التالي</button>
+
+          </div>
+          <!-- ========== End Section ========== -->
+          <div class="d-none step" id="step-2">
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal">
+                  اختر مجموعة مستخدمي الاختبار
+                </h6>
+                <hr>
+              </div>
+
+              <div class="mb-2 d-flex align-items-center gap-1">
+                <input type="radio" value="توظيف مشاركين من فريق TesTTable" name="test-user-group" checked
+                  id="test-user-group-team-1" />
+                <label class="form-check-label mb-0" for="test-user-group-team-1">
+                  توظيف مشاركين من فريق TesTTable
+                </label>
+              </div>
+
+              <div class="mb-2 d-flex align-items-center gap-1">
+                <input type="radio" value="فريق مشاركين خاص بك" name="test-user-group" id="test-user-group-team-2" />
+                <label class="form-check-label mb-0" for="test-user-group-team-2">
+                  فريق مشاركين خاص بك
+                </label>
+              </div>
+            </div>
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal"> حدد الفئة العمرية </h6>
+                <hr>
+              </div>
+
+              <div class="mb-3 radio-card">
+                <input type="radio" value="غير محدد" name="age-selection-method" checked id="age-selection-none" />
+                <label class="form-check-label" for="age-selection-none"> غير
+                  محدد </label>
+              </div>
+
+              <div class="mb-3 radio-card">
+                <input type="radio" value="نطاق عمري واحد محدد فقط" name="age-selection-method"
+                  id="age-selection-single" data-show="#single-age-range" />
+                <label class="form-check-label" for="age-selection-single">
+                  نطاق عمري واحد محدد فقط (+ 5
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
+                      <path fill="#000" class="cls-1"
+                        d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
+                      <path fill="#000" class="cls-1"
+                        d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
+                    </svg>
+                  </span> لكل مستخدم اختبار)
+                </label>
+
+                <div id="single-age-range" class="hidden sub-options">
+                  <div class="row g-4 align-items-start ">
+
+                    <div class="col-md-4">
+                      <label class="form-label" for="single-from">من</label>
+                      <input type="number" class="form-control" name="single-from" id="single-from"
+                        placeholder="مثلاً ١٨" />
+                    </div>
+                    <div class="col-md-4">
+                      <label class="form-label" for="single-to">إلى</label>
+                      <input type="number" class="form-control" name="single-to" id="single-to"
+                        placeholder="مثلاً ٦٥" />
+                    </div>
+                    <div class="col-md-4">
+                      <label class="form-label" for="single-amount">العدد</label>
+                      <input type="number" class="form-control amount-input" disabled name="single-amount"
+                        id="single-amount" placeholder="مثلاً ٦" />
+                      <div class="form-text-error d-none">العدد مطلوب</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- عدة نطاقات عمرية -->
+              <div class="mb-3 radio-card">
+                <input type="radio" value="عدة نطاقات عمرية" name="age-selection-method" id="age-selection-multiple"
+                  data-show="#multi-age-range" />
+                <label class="form-check-label" for="age-selection-multiple">
+                  عدة نطاقات عمرية (+ 10<span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
+                      <path fill="#000" class="cls-1"
+                        d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
+                      <path fill="#000" class="cls-1"
+                        d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
+                    </svg>
+                  </span> لكل مستخدم اختبار)
+                </label>
+
+                <div id="multi-age-range" class="hidden mb-3 sub-options">
+                  <div class="duplicateContainer">
+                    <div class="row g-4 align-items-start mb-2 age-range-row position-relative">
+                      <div class="col-md-4">
+                        <label class="form-label" for="multi-from">من</label>
+                        <input type="number" class="form-control" name="multi-from[]" id="multi-from"
+                          placeholder="مثلاً ١٨" />
+                      </div>
+                      <div class="col-md-4">
+                        <label class="form-label" for="multi-to">إلى</label>
+                        <input type="number" class="form-control" name="multi-to[]" id="multi-to"
+                          placeholder="مثلاً ٦٥" />
+                      </div>
+                      <div class="col-md-4">
+                        <label class="form-label" for="multi-amount">العدد</label>
+                        <input type="number" class="form-control amount-input" name="multi-amount[]" id="multi-amount"
+                          placeholder="مثلاً ٦" />
                         <div class="form-text-error d-none">العدد مطلوب</div>
-                        </div>
+                      </div>
+                      <button type="button" class="remove-row"><img src="assets/trash-2.svg" /></button>
                     </div>
+                  </div>
+                  <button type="button" class="addRowBtn"> إضافة نطاق عمري
+                    جديد </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ========== Start Section ========== -->
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal"> حدد نوع المشاركين </h6>
+                <hr>
+              </div>
+
+              <div class="mb-3 radio-card">
+                <input type="radio" name="tester-type" value="غير محدد" checked id="tester-type-unspecified"
+                  data-value="unsupervised">
+                <label class="form-check-label" for="tester-type-unspecified">غير محدد</label>
+              </div>
+
+              <div class="mb-3 radio-card">
+                <input type="radio" name="tester-type" value="توزيع متوازن بين الجنسين" id="tester-type-balanced"
+                  data-value="balanced">
+                <label class="form-check-label" for="tester-type-balanced">
+                  توزيع متوازن بين الجنسين (+ 5
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
+                      <path fill="#000" class="cls-1"
+                        d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
+                      <path fill="#000" class="cls-1"
+                        d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
+                    </svg>
+                  </span> لكل مستخدم اختبار)
+                </label>
+              </div>
+
+              <!-- خيار: توزيع محدد -->
+              <div class="mb-3 radio-card">
+                <input type="radio" name="tester-type" value="توزيع محدد للجنس" id="tester-type-specific-gender"
+                  data-value="specific_gender">
+                <label class="form-check-label" for="tester-type-specific-gender">
+                  توزيع محدد للجنس (+ 10
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
+                      <path fill="#000" class="cls-1"
+                        d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
+                      <path fill="#000" class="cls-1"
+                        d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
+                    </svg>
+                  </span> لكل مستخدم اختبار)
+                </label>
+
+                <div class="hidden   sub-options">
+                  <div class="row g-5 align-items-start mb-2 select-gender ">
+                    <!-- حقل الإناث -->
+                    <div class="col-md-6">
+                      <label class="form-label" for="tester-female-count">أنثى</label>
+                      <div class="d-flex">
+                        <div class="gender-icon">
+                          <img src="assets/venus.svg" alt>
+                        </div>
+                        <input type="number" class="form-control" name="tester-female-count" id="tester-female-count"
+                          placeholder="مثلاً 3">
+                      </div>
                     </div>
-                </div>
 
-                <!-- عدة نطاقات عمرية -->
-                <div class="mb-3 radio-card">
-                    <input type="radio" value="عدة نطاقات عمرية" name="age-selection-method" id="age-selection-multiple"
-                    data-show="#multi-age-range" />
-                    <label class="form-check-label" for="age-selection-multiple">
-                    عدة نطاقات عمرية (+ 10<span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
-                        <path fill="#000" class="cls-1"
-                            d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
-                        <path fill="#000" class="cls-1"
-                            d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
-                        </svg>
-                    </span> لكل مستخدم اختبار)
-                    </label>
-
-                    <div id="multi-age-range" class="hidden mb-3 sub-options">
-                    <div class="duplicateContainer">
-                        <div class="row g-4 align-items-start mb-2 age-range-row position-relative">
-                        <div class="col-md-4">
-                            <label class="form-label" for="multi-from">من</label>
-                            <input type="number" class="form-control" name="multi-from[]" id="multi-from"
-                            placeholder="مثلاً ١٨" />
+                    <!-- حقل الذكور -->
+                    <div class="col-md-6">
+                      <label class="form-label" for="tester-male-count">ذكر</label>
+                      <div class="d-flex">
+                        <div class="gender-icon">
+                          <img src="assets/mars.svg" alt>
                         </div>
-                        <div class="col-md-4">
-                            <label class="form-label" for="multi-to">إلى</label>
-                            <input type="number" class="form-control" name="multi-to[]" id="multi-to"
-                            placeholder="مثلاً ٦٥" />
-                        </div>
-                        <div class="col-md-4">
-                            <label class="form-label" for="multi-amount">العدد</label>
-                            <input type="number" class="form-control amount-input" name="multi-amount[]" id="multi-amount"
-                            placeholder="مثلاً ٦" />
-                            <div class="form-text-error d-none">العدد مطلوب</div>
-                        </div>
-                        <button type="button" class="remove-row"><img src="assets/trash-2.svg" /></button>
-                        </div>
+                        <input type="number" class="form-control" name="tester-male-count" id="tester-male-count"
+                          placeholder="مثلاً 3">
+                      </div>
                     </div>
-                    <button type="button" class="addRowBtn"> إضافة نطاق عمري
-                        جديد </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ========== End Section ========== -->
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal">اختر اللغة</h6>
+                <hr>
+              </div>
+
+              <div class="mb-3 sub-options langeselect addRow-lang d-block">
+                <div class="duplicateContainer">
+                  <div class="lang-row mb-3 age-range-row">
+                    <div class="lang-logic mt-2 d-flex gap-1">
+                      <div class="btn-group rounded-0" role="group" aria-label="Language condition">
+                        <input type="radio" class="btn-check" checked name="lang_condition[0]" id="lang_condition_and_0"
+                          value="and" autocomplete="off" />
+                        <label class="btn rounded-0" for="lang_condition_and_0">و</label>
+
+                        <input type="radio" class="btn-check" name="lang_condition[0]" id="lang_condition_or_0"
+                          value="or" autocomplete="off" />
+                        <label class="btn rounded-0" for="lang_condition_or_0">أو</label>
+                      </div>
                     </div>
-                </div>
-                </div>
 
-                <!-- ========== Start Section ========== -->
+                    <label class="form-label" for="language_select_0">اللغات</label>
+                    <div class="d-flex align-items-center gap-2 position-relative w-max">
+                      <select class="form-select w-auto" name="languages[]" id="language_select_0">
+                        <option disabled>اختر</option>
+                        <option selected value="العربية ">العربية</option>
+                        <option value="الإنجليزية">الإنجليزية</option>
+                        <option value="الفرنسية">الفرنسية</option>
+                        <option value="الألمانية">الألمانية</option>
+                      </select>
 
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal"> حدد نوع المشاركين </h6>
-                    <hr>
-                </div>
-
-                <div class="mb-3 radio-card">
-                    <input type="radio" name="tester-type" value="غير محدد" checked id="tester-type-unspecified"
-                    data-value="unsupervised">
-                    <label class="form-check-label" for="tester-type-unspecified">غير محدد</label>
-                </div>
-
-                <div class="mb-3 radio-card">
-                    <input type="radio" name="tester-type" value="توزيع متوازن بين الجنسين" id="tester-type-balanced"
-                    data-value="balanced">
-                    <label class="form-check-label" for="tester-type-balanced">
-                    توزيع متوازن بين الجنسين (+ 5
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
-                        <path fill="#000" class="cls-1"
-                            d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
-                        <path fill="#000" class="cls-1"
-                            d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
-                        </svg>
-                    </span> لكل مستخدم اختبار)
-                    </label>
-                </div>
-
-                <!-- خيار: توزيع محدد -->
-                <div class="mb-3 radio-card">
-                    <input type="radio" name="tester-type" value="توزيع محدد للجنس" id="tester-type-specific-gender"
-                    data-value="specific_gender">
-                    <label class="form-check-label" for="tester-type-specific-gender">
-                    توزيع محدد للجنس (+ 10
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
-                        <path fill="#000" class="cls-1"
-                            d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
-                        <path fill="#000" class="cls-1"
-                            d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
-                        </svg>
-                    </span> لكل مستخدم اختبار)
-                    </label>
-
-                    <div class="hidden   sub-options">
-                    <div class="row g-5 align-items-start mb-2 select-gender ">
-                        <!-- حقل الإناث -->
-                        <div class="col-md-6">
-                        <label class="form-label" for="tester-female-count">أنثى</label>
-                        <div class="d-flex">
-                            <div class="gender-icon">
-                            <img src="assets/venus.svg" alt>
-                            </div>
-                            <input type="number" class="form-control" name="tester-female-count" id="tester-female-count"
-                            placeholder="مثلاً 3">
-                        </div>
-                        </div>
-
-                        <!-- حقل الذكور -->
-                        <div class="col-md-6">
-                        <label class="form-label" for="tester-male-count">ذكر</label>
-                        <div class="d-flex">
-                            <div class="gender-icon">
-                            <img src="assets/mars.svg" alt>
-                            </div>
-                            <input type="number" class="form-control" name="tester-male-count" id="tester-male-count"
-                            placeholder="مثلاً 3">
-                        </div>
-                        </div>
+                      <button type="button" class="remove-row">
+                        <img src="assets/trash-2.svg">
+                      </button>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-                <!-- ========== End Section ========== -->
-
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal">اختر اللغة</h6>
-                    <hr>
+                  </div>
                 </div>
 
-                <div class="mb-3 sub-options addRow-lang d-block">
-                    <div class="duplicateContainer">
+                <button type="button" class="addRowBtn">إضافة لغة</button>
+              </div>
+            </div>
+
+            <!-- ========== End Section ========== -->
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal">اختر بلد الإقامة</h6>
+                <hr>
+              </div>
+
+              <div class="mb-3 radio-card">
+                <input type="radio" name="residency_method" value="يجب أن يقيم مستخدمو الاختبار في بلد معين"
+                  id="residency_supervised" data-value="supervised">
+                <label class="form-check-label" for="residency_supervised">
+                  يجب أن يقيم مستخدمو الاختبار في بلد معين
+                </label>
+
+                <div class="hidden sub-options residency_supervised">
+                  <div class="duplicateContainer">
                     <div class="lang-row mb-3 age-range-row">
-                        <div class="lang-logic mt-2 d-flex gap-1">
-                        <div class="btn-group rounded-0" role="group" aria-label="Language condition">
-                            <input type="radio" class="btn-check" checked name="lang_condition[0]" id="lang_condition_and_0"
-                            value="and" autocomplete="off" />
-                            <label class="btn rounded-0" for="lang_condition_and_0">و</label>
-
-                            <input type="radio" class="btn-check" name="lang_condition[0]" id="lang_condition_or_0"
-                            value="or" autocomplete="off" />
-                            <label class="btn rounded-0" for="lang_condition_or_0">أو</label>
-                        </div>
-                        </div>
-
-                        <label class="form-label" for="language_select_0">اللغات</label>
-                        <div class="d-flex align-items-center gap-2 position-relative w-max">
-                        <select class="form-select w-auto" name="languages[]" id="language_select_0">
-                            <option disabled>اختر</option>
-                            <option selected value="العربية ">العربية</option>
-                            <option value="الإنجليزية">الإنجليزية</option>
-                            <option value="الفرنسية">الفرنسية</option>
-                            <option value="الألمانية">الألمانية</option>
+                      <label class="form-label" for="country_select_1">بلد
+                        الإقامة</label>
+                      <div class="d-flex align-items-center gap-2 position-relative w-max">
+                        <select class="form-select w-auto" name="residency_countries[]" id="country_select_1">
+                          <option disabled>اختر</option>
+                          <option selected value="العربية">العربية</option>
+                          <option value="الإنجليزية">الإنجليزية</option>
+                          <option value="الفرنسية">الفرنسية</option>
+                          <option value="الألمانية">الألمانية</option>
                         </select>
 
                         <button type="button" class="remove-row">
-                            <img src="assets/trash-2.svg">
+                          <img src="assets/trash-2.svg" alt="حذف">
                         </button>
-                        </div>
+                      </div>
                     </div>
-                    </div>
+                  </div>
 
-                    <button type="button" class="addRowBtn">إضافة لغة</button>
+                  <button type="button" class="addRowBtn">إضافة بلد</button>
                 </div>
-                </div>
+              </div>
 
-                <!-- ========== End Section ========== -->
+              <div class="mb-3 radio-card">
+                <input type="radio" name="residency_method" value="اتقان اللغة اهم من بلد الاقامة" checked
+                  id="residency_unsupervised" data-value="unsupervised">
+                <label class="form-check-label" for="residency_unsupervised">
+                 اتقان اللغة اهم من بلد الاقامة
+                </label>
+              </div>
 
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal">اختر بلد الإقامة</h6>
-                    <hr>
-                </div>
+              <hr>
 
-                <div class="mb-3 radio-card">
-                    <input type="radio" name="residency_method" value="يجب أن يقيم مستخدمو الاختبار في بلد معين"
-                    id="residency_supervised" data-value="supervised">
-                    <label class="form-check-label" for="residency_supervised">
-                    يجب أن يقيم مستخدمو الاختبار في بلد معين
-                    </label>
-
-                    <div class="hidden sub-options residency_supervised">
-                    <div class="duplicateContainer">
-                        <div class="lang-row mb-3 age-range-row">
-                        <label class="form-label" for="country_select_1">بلد
-                            الإقامة</label>
-                        <div class="d-flex align-items-center gap-2 position-relative w-max">
-                            <select class="form-select w-auto" name="residency_countries[]" id="country_select_1">
-                            <option disabled>اختر</option>
-                            <option selected value="العربية">العربية</option>
-                            <option value="الإنجليزية">الإنجليزية</option>
-                            <option value="الفرنسية">الفرنسية</option>
-                            <option value="الألمانية">الألمانية</option>
-                            </select>
-
-                            <button type="button" class="remove-row">
-                            <img src="assets/trash-2.svg" alt="حذف">
-                            </button>
-                        </div>
-                        </div>
-                    </div>
-
-                    <button type="button" class="addRowBtn">إضافة بلد</button>
-                    </div>
-                </div>
-
-                <div class="mb-3 radio-card">
-                    <input type="radio" name="residency_method" value="المهارات اللغوية فقط هي المهمة" checked
-                    id="residency_unsupervised" data-value="unsupervised">
-                    <label class="form-check-label" for="residency_unsupervised">
-                    المهارات اللغوية فقط هي المهمة
-                    </label>
-                </div>
-
-                <hr>
-
-                <p>
-                    إذا كنت ترغب في التوظيف كمستخدم من بلدان أخرى، يُرجى التواصل
-                    معنا قبل تقديم الطلب لمناقشة إمكانية تلبية طلبك.
-                </p>
-                </div>
-
-                <!-- ========== End Section ========== -->
-
-                <div class="d-flex align-items-center gap-3">
-                <button type="button" class="btn btn-outline-dark px-4 py-2 rounded-0 prev-btn">السابق</button>
-
-                <button type="button" class="btn btn-dark px-4 py-2 rounded-0 next-btn">التالي</button>
-                </div>
-
+              <p>
+                إذا كنت ترغب في التوظيف كمستخدم من بلدان أخرى، يُرجى التواصل
+                معنا قبل تقديم الطلب لمناقشة إمكانية تلبية طلبك.
+              </p>
             </div>
+
             <!-- ========== End Section ========== -->
 
-            <div class="d-none step" id="step-3">
+            <div class="d-flex align-items-center gap-3">
+              <button type="button" class="btn btn-outline-dark px-4 py-2 rounded-0 prev-btn">السابق</button>
 
-                <div class="section">
-                <div class="card p-2 p-md-4 mb-4">
-                    <div>
-                    <h6 class="card-title fw-normal">أضف معايير فحص إضافية</h6>
-                    <hr>
-                    </div>
-
-                    <div class="mb-3 radio-card">
-                    <input type="radio" name="write_question" value="غير محدد" checked id="main-method-0"
-                        data-value="none">
-                    <label class="form-check-label" for="main-method-0">غير
-                        محدد</label>
-                    </div>
-
-                    <div class="mb-3 radio-card" data-show="expert">
-                    <input type="radio" name="write_question" value="تقوم TesTTable بإعداد أسئلة الفحص نيابةً عنك"
-                        id="main-method-1" data-value="expert-prepared">
-                    <label class="form-check-label" for="main-method-1">
-                        تقوم TesTTable بإعداد أسئلة الفحص نيابةً عنك (+ 10
-                        <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
-                            <path fill="#000" class="cls-1"
-                            d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
-                            <path fill="#000" class="cls-1"
-                            d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
-                        </svg>
-                        </span>
-                        )
-                        لكل مستخدم اختبار لكل معيار
-                    </label>
-                    </div>
-
-                    <div class="mb-3 radio-card" data-show="expert,question">
-                    <input type="radio" name="write_question" value="اكتب وأعدّ أسئلة الفحص بنفسك" id="main-method-2"
-                        data-value=""="self-written">
-                    <label class="form-check-label" for="main-method-2">
-                        اكتب وأعدّ أسئلة الفحص بنفسك (+ 10
-                        <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
-                            <path fill="#000" class="cls-1"
-                            d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
-                            <path fill="#000" class="cls-1"
-                            d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
-                        </svg>
-                        )
-                        </span>
-                        لكل مستخدم اختبار لكل سؤال
-                    </label>
-                    </div>
-                </div>
-
-                <div class="hidden mb-3 sub-options" data-id="question">
-                    <div class="card p-2 p-md-4 mb-4">
-                    <div>
-                        <h6 class="card-title fw-normal">السؤال</h6>
-                        <hr>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="question_text" class="form-label">السؤال</label>
-                        <textarea name="question_text" id="question_text" rows="6" cols="50" class="form-control"
-                        placeholder="اكتب السؤال هنا"></textarea>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="hidden mb-3 sub-options" data-id="expert">
-                    <div class="card p-2 p-md-4 mb-4">
-                    <div>
-                        <h6 class="card-title fw-normal">استبعاد خبراء</h6>
-                        <hr>
-                    </div>
-
-                    <div class="mb-3 radio-card">
-                        <input type="radio" name="expert_method" checked id="expert_unspecified">
-                        <label class="form-check-label" for="expert_unspecified">
-                        غير محدد
-                        </label>
-                    </div>
-
-                    <div class="mb-3 radio-card">
-                        <input type="radio" name="expert_method" id="expert_exclude">
-                        <label class="form-check-label" for="expert_exclude">
-                        استبعد خبراء
-                        </label>
-
-                        <div class="hidden mb-3 sub-options">
-                        <div class="row align-items-start mt-1 expert-row">
-                            <div class="col-md-12">
-                            <label for="expert_title_1" class="form-label">المسمى الوظيفي</label>
-                            <input type="text" id="expert_title_1" name="excluded_experts[]" class="form-control"
-                                placeholder="مثال: مصمم واجهات المستخدم">
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <!-- زر التالي -->
-                <div class="d-flex align-items-center gap-3">
-                <button type="button" class="btn btn-outline-dark px-4 py-2 rounded-0 prev-btn">السابق</button>
-
-                <button type="button" class="btn btn-dark px-4 py-2 rounded-0 next-btn">التالي</button>
-                </div>
+              <button type="button" class="btn btn-dark px-4 py-2 rounded-0 next-btn">التالي</button>
             </div>
-            <!-- ========== End Section ========== -->
 
-            <div class="d-none step" id="step-4">
+          </div>
+          <!-- ========== End Section ========== -->
 
-                <div class="card p-2 p-md-4 mb-4">
+          <div class="d-none step" id="step-3">
+
+            <div class="section">
+              <div class="card p-2 p-md-4 mb-4">
                 <div>
-                    <h6 class="card-title fw-normal">حدد الجهاز المطلوب
-                    للمشاركة</h6>
-                    <hr>
+                  <h6 class="card-title fw-normal">أضف معايير فحص إضافية</h6>
+                  <hr>
                 </div>
-
 
                 <div class="mb-3 radio-card">
-                    <input type="radio" name="device_requirement" value="غير محدد" data-value="not" checked
-                    id="device-none" />
-                    <label class="form-check-label" for="device-none">غير
+                  <input type="radio" name="write_question" value="غير محدد" checked id="main-method-0"
+                    data-value="none">
+                  <label class="form-check-label" for="main-method-0">غير
                     محدد</label>
                 </div>
 
-
-                <div class="mb-3 radio-card">
-                    <input type="radio" name="device_requirement" value="جهاز معين" data-value="spacific_device"
-                    id="device-specific" />
-                    <label class="form-check-label" for="device-specific">
-                    جهاز معين مطلوب (+ 5
+                <div class="mb-3 radio-card" data-show="expert">
+                  <input type="radio" name="write_question" value="تقوم TesTTable بإعداد أسئلة الفحص نيابةً عنك"
+                    id="main-method-1" data-value="expert-prepared">
+                  <label class="form-check-label" for="main-method-1">
+                    تقوم TesTTable بإعداد أسئلة الفحص نيابةً عنك (+ 10
                     <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
                         <path fill="#000" class="cls-1"
-                            d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
+                          d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
                         <path fill="#000" class="cls-1"
-                            d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
-                        </svg>
-                    </span> لكل مستخدم)
-                    </label>
-
-            
-                    
-                    <div class="hidden sub-options pt-2">
-                    <div class="align-items-start  age-range-row">
-
-                        <div class="radio-card">
-                        <div class="form-check">
-                            <input type="checkbox" name="devices[]" value="كمبيوتر مكتبي / لابتوب" id="device-desktop" />
-                            <label class="form-check-label" for="device-desktop">كمبيوتر مكتبي / لابتوب</label>
-                        </div>
-                        <div class="hidden sub-options">
-                            <div class="ps-3 align-items-start">
-                            <div class="form-check">
-                                <input type="radio" name="desktop_os" id="desktop-any" />
-                                <label class="form-check-label" for="desktop-any">أي نظام تشغيل</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="desktop_os" id="desktop-windows" />
-                                <label class="form-check-label" for="desktop-windows">Windows</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="desktop_os" id="desktop-macos" />
-                                <label class="form-check-label" for="desktop-macos">macOS</label>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-
-            
-                        
-                        <div class="radio-card">
-                        <div class="form-check">
-                            <input type="checkbox" name="devices[]" value="هاتف محمول" id="device-mobile" />
-                            <label class="form-check-label" for="device-mobile">هاتف محمول</label>
-                        </div>
-                        <div class="hidden sub-options">
-                            <div class="ps-3 align-items-start">
-                            <div class="form-check">
-                                <input type="radio" name="mobile_os" id="mobile-any" />
-                                <label class="form-check-label" for="mobile-any">أي نظام تشغيل</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="mobile_os" id="mobile-windows" />
-                                <label class="form-check-label" for="mobile-windows">Windows</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="mobile_os" id="mobile-macos" />
-                                <label class="form-check-label" for="mobile-macos">macOS</label>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-
-                    
-                        
-                        <div class="radio-card">
-                        <div class="form-check">
-                            <input type="checkbox" name="devices[]" value="خيارات أخرى" id="device-other" />
-                            <label class="form-check-label" for="device-other">
-                            خيارات أخرى (مثل: جهاز لوحي، تلفاز ذكي، ساعة ذكية،
-                            إلخ)
-                            </label>
-                        </div>
-                        <div class="hidden sub-options">
-                            <div class="ps-3 align-items-start">
-                            <input type="text" name="other_device_description" class="form-control" placeholder="اختر" />
-                            </div>
-                        </div>
-                        </div>
-
-                    </div>
-                    </div>
-                </div>
+                          d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
+                      </svg>
+                    </span>
+                    )
+                    لكل مستخدم اختبار لكل معيار
+                  </label>
                 </div>
 
-                <div class="for-online d-none">
-                <div class="card p-2 p-md-4 mb-4" id="remote-tools-card">
-                    <div>
-                    <h6 class="card-title fw-normal">اختر أداتك عن بعد</h6>
-                    <hr>
-                    </div>
-
-                    <small class="fw-semibold mb-2">Remote Tool</small>
-
-                    <div class="mb-2 radio-card">
-                    <input type="radio" name="remote_tool" checked id="remote_tool_none" value="Remote tool">
-                    <label class="form-check-label" for="remote_tool_none">Remote tool</label>
-                    </div>
-
-                    <div class="mb-2 radio-card">
-                    <input type="radio" name="remote_tool" id="remote_tool_loop11" value="Loop11">
-                    <label class="form-check-label" for="remote_tool_loop11">Loop11</label>
-                    </div>
-
-                    <div class="mb-2 radio-card">
-                    <input type="radio" name="remote_tool" id="remote_tool_lookback" value="Lookback">
-                    <label class="form-check-label" for="remote_tool_lookback">Lookback</label>
-                    </div>
-
-                    <div class="mb-2 radio-card">
-                    <input type="radio" name="remote_tool" id="remote_tool_optimalworkshop" value="Optimalworkshop">
-                    <label class="form-check-label" for="remote_tool_optimalworkshop">Optimalworkshop</label>
-                    </div>
-
-                    <div class="mb-2 radio-card">
-                    <input type="radio" name="remote_tool" id="remote_tool_solidusertests" value="Solid User Tests">
-                    <label class="form-check-label" for="remote_tool_solidusertests">Solid User Tests</label>
-                    </div>
-
-                    <div class="mb-2 radio-card">
-                    <input type="radio" name="remote_tool" id="remote_tool_other" value="Other">
-                    <label class="form-check-label" for="remote_tool_other">
-                        Other (UserZoom, UserTesting, Userbrain, Maze etc.)
-                    </label>
-
-                    <div class="hidden mb-2 sub-options">
-                        <input type="text" class="form-control" name="remote_tool_other_detail"
-                        id="remote_tool_other_detail" placeholder="حدد الأداة الأخرى">
-                    </div>
-                    </div>
+                <div class="mb-3 radio-card" data-show="expert,question">
+                  <input type="radio" name="write_question" value="اكتب وأعدّ أسئلة الفحص بنفسك" id="main-method-2"
+                    data-value=""="self-written">
+                  <label class="form-check-label" for="main-method-2">
+                    اكتب وأعدّ أسئلة الفحص بنفسك (+ 10
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
+                        <path fill="#000" class="cls-1"
+                          d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
+                        <path fill="#000" class="cls-1"
+                          d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
+                      </svg>
+                      )
+                    </span>
+                    لكل مستخدم اختبار لكل سؤال
+                  </label>
                 </div>
+              </div>
 
-                <div class="card p-2 p-md-4 mb-4" id="remote-tool-details-card">
-                    <div>
-                    <h6 class="card-title fw-normal">تقديم التفاصيل</h6>
-                    <hr>
-                    </div>
-
-                    <div class="mb-2 radio-card">
-                    <label for="remote_tool_link">Public link</label>
-                    <input type="text" class="form-control" name="remote_tool_link" id="remote_tool_link"
-                        placeholder="e.g. https://participate.lookback.io/123456">
-                    </div>
-                </div>
-                </div>
-
-                <div class="for-offline">
+              <div class="hidden mb-3 sub-options" data-id="question">
                 <div class="card p-2 p-md-4 mb-4">
-                    <div>
-                    <h6 class="card-title fw-normal"> حدد أداتك عن بُعد وتفاصيل
-                        الوصول </h6>
+                  <div>
+                    <h6 class="card-title fw-normal">السؤال</h6>
                     <hr>
-                    </div>
+                  </div>
 
-                    <div class="mb-3 radio-card">
-                    <input type="radio" checked name="offline-tool" id="offline-shared-link">
-                    <label class="form-check-label" for="offline-shared-link">
-                        توفير رابط مشاركة واحد لجميع الجلسات
+                  <div class="mb-3">
+                    <label for="question_text" class="form-label">السؤال</label>
+                    <textarea name="question_text" id="question_text" rows="6" cols="50" class="form-control"
+                      placeholder="اكتب السؤال هنا"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hidden mb-3 sub-options" data-id="expert">
+                <div class="card p-2 p-md-4 mb-4">
+                  <div>
+                    <h6 class="card-title fw-normal">استبعاد مشاركين</h6>
+                    <hr>
+                  </div>
+
+                  <div class="mb-3 radio-card">
+                    <input type="radio" name="expert_method" checked id="expert_unspecified">
+                    <label class="form-check-label" for="expert_unspecified">
+                      غير محدد
                     </label>
-                    </div>
+                  </div>
 
-                    <div class="mb-3 radio-card">
-                    <input type="radio" name="offline-tool" id="offline-individual-links">
-                    <label class="form-check-label" for="offline-individual-links">
-                        توفير روابط مشاركة فردية لكل جلسة
+                  <div class="mb-3 radio-card">
+                    <input type="radio" name="expert_method" id="expert_exclude">
+                    <label class="form-check-label" for="expert_exclude">
+                      استبعد مشاركين
                     </label>
 
                     <div class="hidden mb-3 sub-options">
-                        <div class="row g-5 align-items-start mb-2 age-range-row">
+                      <div class="row align-items-start mt-1 expert-row">
                         <div class="col-md-12">
-                            <label for="offline-tool-select" class="form-label">الأداة</label>
-                            <select name="offline-tool-select" class="form-select" id="offline-tool-select">
-                            <option value>اختر</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            </select>
+                          <label for="expert_title_1" class="form-label">المسمى الوظيفي</label>
+                          <input type="text" id="expert_title_1" name="excluded_experts[]" class="form-control"
+                            placeholder="مثال: مصمم واجهات المستخدم">
                         </div>
-                        </div>
+                      </div>
                     </div>
-                    </div>
-
-                    <div class="mb-3 radio-card">
-                    <input type="radio" name="offline-tool" id="send-details-to-users">
-                    <label class="form-check-label" for="send-details-to-users">
-                        سأرسل جميع تفاصيل المشاركة مباشرةً إلى مستخدمي الاختبار
-                        لاحقًا
-                    </label>
-                    </div>
-
-                    <div class="mb-3 radio-card">
-                    <input type="radio" name="offline-tool" id="send-details-to-table">
-                    <label class="form-check-label" for="send-details-to-table">
-                        سأرسل جميع تفاصيل المشاركة إلى TesTTable لاحقًا
-                    </label>
-                    </div>
+                  </div>
                 </div>
-
-                <div class="card p-2 p-md-4 mb-4">
-                    <div>
-                    <h6 class="card-title fw-normal">حدد المدة، والتاريخ،
-                        والفترة الزمنية</h6>
-                    <hr>
-                    </div>
-
-                    <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="session-duration">المدة لكل جلسة</label>
-                        <select name="session-duration" class="form-select" id="session-duration">
-                        <option value>اختر المدة</option>
-                        <option selected value="30 دقيقة">30 دقيقة</option>
-                        <option value="60 دقيقة">60 دقيقة</option>
-                
-                        </select>
-                    </div>
-                    </div>
-
-                    <div class="my-3 dup-row">
-                    <div class="duplicateContainer ">
-                        <div class="lang-row row mb-3 add_date age-range-row position-relative ">
-                        <div class="col-md-6">
-                            <label for="start-date">بداية من</label>
-                            <input type="date" name="start-date" placeholder="يوم/شهر/شنة" class="form-control"
-                            id="start-date">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="end-date">نهاية بـ</label>
-                            <input type="date" name="end-date" placeholder="يوم/شهر/شنة" class="form-control" id="end-date">
-                        </div>
-
-                        <button type="button" class="remove-row">
-                            <img src="assets/trash-2.svg">
-                        </button>
-                        </div>
-
-                    </div>
-
-                    <button type="button" class="addRowBtn">إضافة موعد</button>
-                    </div>
-                </div>
-                </div>
-
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal">معلومات إضافية للمشاركين</h6>
-                    <hr>
-                </div>
-
-                <div class="form-group">
-                    <label for="tester-notes">ملاحظات</label>
-                    <textarea id="tester-notes" name="tester_notes" rows="6" cols="50" class="form-control"
-                    placeholder="اكتب أي ملاحظات إضافية هنا"></textarea>
-                </div>
-                </div>
-
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal">معلومات إضافية لـ
-                    TesTTable</h6>
-                    <hr>
-                </div>
-
-                <div class="form-group">
-                    <label for="testtable-instructions">تعليمات إضافية</label>
-                    <textarea id="testtable-instructions" name="testtable_instructions" class="form-control" rows="5"
-                    placeholder="اكتب أي تعليمات إضافية هنا..."></textarea>
-                </div>
-                </div>
-
-        
-                
-                <div class="d-flex align-items-center gap-3">
-                <button type="button" class="btn btn-outline-dark px-4 py-2 rounded-0 prev-btn">السابق</button>
-
-                <button type="button" class="btn btn-dark px-4 py-2 rounded-0 next-btn">التالي</button>
-                </div>
+              </div>
             </div>
-            <!-- ========== End Section ========== -->
 
-            <div class="d-none step" id="step-5">
+            <!-- زر التالي -->
+            <div class="d-flex align-items-center gap-3">
+              <button type="button" class="btn btn-outline-dark px-4 py-2 rounded-0 prev-btn">السابق</button>
 
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal">إدارة الحوافز</h6>
-                    <hr>
-                </div>
+              <button type="button" class="btn btn-dark px-4 py-2 rounded-0 next-btn">التالي</button>
+            </div>
+          </div>
+          <!-- ========== End Section ========== -->
 
-                <p>تقوم TestingTime بالتعامل مع دفع الحوافز لمستخدمي
-                    الاختبار</p>
+          <div class="d-none step" id="step-4">
 
-                <label for="incentive-amount">قيمة الحافز لكل مستخدم
-                    اختبار</label>
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal">حدد الجهاز المطلوب
+                  للمشاركة</h6>
+                <hr>
+              </div>
 
-                <div class="d-flex align-items-center  mt-2">
-                    <div class="gender-icon">
-                    <img width="20" class="brightness-0" src="assets/Saudi_Riyal_Symbol.svg"
-                        alt="رمز الريال السعودي">
-                    </div>
-                    <input type="number" id="incentive-amount" name="incentive_amount" class="form-control w-max"
-                    placeholder="مثلاً 10" min="0">
-                </div>
-                <small id="incentive-amount-help" class="form-text ">
-                    الحد الأدنى للمبلغ هو
-                    <span class="required">
 
-                    </span>
+              <div class="mb-3 radio-card">
+                <input type="radio" name="device_requirement" value="غير محدد" data-value="not" checked
+                  id="device-none" />
+                <label class="form-check-label" for="device-none">غير
+                  محدد</label>
+              </div>
 
-                    <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12px" viewBox="0 0 1124.14 1256.39">
-                        <path fill="#000" class="cls-1"
+
+              <div class="mb-3 radio-card">
+                <input type="radio" name="device_requirement" value="جهاز معين" data-value="spacific_device"
+                  id="device-specific" />
+                <label class="form-check-label" for="device-specific">
+                  جهاز معين مطلوب (+ 5
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
+                      <path fill="#000" class="cls-1"
                         d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
-                        <path fill="#000" class="cls-1"
+                      <path fill="#000" class="cls-1"
                         d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
                     </svg>
-                    </span>
-                </small>
-                </div>
+                  </span> لكل مستخدم)
+                </label>
 
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal">توقيع المستند</h6>
-                    <hr>
-                </div>
-
-                <p>
-                    قم برفع مستند ليقوم مستخدم الاختبار بتوقيعه قبل المشاركة في
-                    الدراسة.
-                    يمكن أن يكون هذا، على سبيل المثال، اتفاقية عدم إفشاء، أو
-                    اتفاقية تسجيل
-                    جلسة اختبار المستخدم، أو أي مستند آخر.
-                </p>
-
+          
                 
-                <div class="mb-3 radio-card">
-                    <input type="radio" name="document_signing_method" value="غير محدد" id="document-signing-none" checked data-value="none">
-                    <label class="form-check-label" for="document-signing-none">غير محدد</label>
-                </div>
+                <div class="hidden sub-options pt-2">
+                  <div class="align-items-start  age-range-row">
 
-    
-                
-                <div class="mb-3 radio-card">
-                    <input type="radio" name="document_signing_method" value="استخدام مستند موجود" id="document-signing-existing" data-value="existing">
-                    <label class="form-check-label" for="document-signing-existing">
-                    استخدام مستند موجود مسبقًا (+10
-                    <span>
-                    
-                        
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
-                        <path fill="#000" class="cls-1"
-                            d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
-                        <path fill="#000" class="cls-1"
-                            d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
-                        </svg>
-                    </span>
-                    لكل مختبر)
-                    </label>
-                </div>
-
-                <div class="mb-3 radio-card">
-                    <input type="radio" name="document_signing_method" value="رفع مستند جديد" id="document-signing-upload" data-value="upload">
-                    <label class="form-check-label" for="document-signing-upload">
-                    رفع مستند جديد (+10
-                    <span>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 1124.14 1256.39">
-                        <path fill="#000" class="cls-1"
-                            d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
-                        <path fill="#000" class="cls-1"
-                            d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
-                        </svg>
-                    </span>
-                    لكل مختبر)
-                    </label>
-
-                    <div class="hidden mb-4 sub-options mt-2">
-                    <div class="row g-4 align-items-start mb-2">
-                        <input type="file" name="document_file" id="document_file" class="upload-file">
+                    <div class="radio-card">
+                      <div class="form-check">
+                        <input type="checkbox" name="devices[]" value="كمبيوتر مكتبي / لابتوب" id="device-desktop" />
+                        <label class="form-check-label" for="device-desktop">كمبيوتر مكتبي / لابتوب</label>
+                      </div>
+                      <div class="hidden sub-options">
+                        <div class="ps-3 align-items-start">
+                          <div class="form-check">
+                            <input type="radio" name="desktop_os" id="desktop-any" />
+                            <label class="form-check-label" for="desktop-any">أي نظام تشغيل</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" name="desktop_os" id="desktop-windows" />
+                            <label class="form-check-label" for="desktop-windows">Windows</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" name="desktop_os" id="desktop-macos" />
+                            <label class="form-check-label" for="desktop-macos">macOS</label>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    </div>
-                </div>
-                </div>
 
         
-                
-                <div class="d-flex align-items-center gap-3">
-                <button type="button" class="btn btn-outline-dark px-4 py-2 rounded-0 prev-btn">السابق</button>
+                    
+                    <div class="radio-card">
+                      <div class="form-check">
+                        <input type="checkbox" name="devices[]" value="هاتف محمول" id="device-mobile" />
+                        <label class="form-check-label" for="device-mobile">هاتف محمول</label>
+                      </div>
+                      <div class="hidden sub-options">
+                        <div class="ps-3 align-items-start">
+                          <div class="form-check">
+                            <input type="radio" name="mobile_os" id="mobile-any" />
+                            <label class="form-check-label" for="mobile-any">أي نظام تشغيل</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" name="mobile_os" id="mobile-windows" />
+                            <label class="form-check-label" for="mobile-windows">Windows</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" name="mobile_os" id="mobile-macos" />
+                            <label class="form-check-label" for="mobile-macos">macOS</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-                <button type="button" class="btn btn-dark px-4 py-2 rounded-0 next-btn">التالي</button>
+                  
+                    
+                    <div class="radio-card">
+                      <div class="form-check">
+                        <input type="checkbox" name="devices[]" value="خيارات أخرى" id="device-other" />
+                        <label class="form-check-label" for="device-other">
+                          خيارات أخرى (مثل: جهاز لوحي، تلفاز ذكي، ساعة ذكية،
+                          إلخ)
+                        </label>
+                      </div>
+                      <div class="hidden sub-options">
+                        <div class="ps-3 align-items-start">
+                          <input type="text" name="other_device_description" class="form-control" placeholder="اختر" />
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
+              </div>
             </div>
-            <!-- ========== End Section ========== -->
 
-            <div class="d-none step" id="step-6">
-
-                <div class="card p-2 p-md-4 mb-4">
+            <div class="for-online d-none">
+              <div class="card p-2 p-md-4 mb-4" id="remote-tools-card">
                 <div>
-                    <h6 class="card-title fw-normal"> الإعدادات الأساسية </h6>
-                    <hr>
+                  <h6 class="card-title fw-normal">اختر أداتك عن بعد</h6>
+                  <hr>
                 </div>
 
+                <small class="fw-semibold mb-2">Remote Tool</small>
+
+                <div class="mb-2 radio-card">
+                  <input type="radio" name="remote_tool" checked id="remote_tool_none" value="Remote tool">
+                  <label class="form-check-label" for="remote_tool_none">Remote tool</label>
+                </div>
+
+                <div class="mb-2 radio-card">
+                  <input type="radio" name="remote_tool" id="remote_tool_loop11" value="Loop11">
+                  <label class="form-check-label" for="remote_tool_loop11">Loop11</label>
+                </div>
+
+                <div class="mb-2 radio-card">
+                  <input type="radio" name="remote_tool" id="remote_tool_lookback" value="Lookback">
+                  <label class="form-check-label" for="remote_tool_lookback">Lookback</label>
+                </div>
+
+                <div class="mb-2 radio-card">
+                  <input type="radio" name="remote_tool" id="remote_tool_optimalworkshop" value="Optimalworkshop">
+                  <label class="form-check-label" for="remote_tool_optimalworkshop">Optimalworkshop</label>
+                </div>
+
+                <div class="mb-2 radio-card">
+                  <input type="radio" name="remote_tool" id="remote_tool_solidusertests" value="Solid User Tests">
+                  <label class="form-check-label" for="remote_tool_solidusertests">Solid User Tests</label>
+                </div>
+
+                <div class="mb-2 radio-card">
+                  <input type="radio" name="remote_tool" id="remote_tool_other" value="Other">
+                  <label class="form-check-label" for="remote_tool_other">
+                    Other (UserZoom, UserTesting, Userbrain, Maze etc.)
+                  </label>
+
+                  <div class="hidden mb-2 sub-options">
+                    <input type="text" class="form-control" name="remote_tool_other_detail"
+                      id="remote_tool_other_detail" placeholder="حدد الأداة الأخرى">
+                  </div>
+                </div>
+              </div>
+
+              <div class="card p-2 p-md-4 mb-4" id="remote-tool-details-card">
                 <div>
-                    <div class="d-flex gap-4 ">
-                    <p>اسم المشروع:</p>
-                    <b class="con-project-name"> اسم المشروع </b>
-                    </div>
-                    <div class="d-flex gap-4 ">
-                    <p>طريقة الدراسة:</p>
-                    <b class="con-study-method"></b>
-                    </div>
-                    <div class="d-flex gap-4 ">
-                    <p>عدد مستخدمي الاختبار:</p>
-                    <b class="con-users"></b>
-                    </div>
+                  <h6 class="card-title fw-normal">تقديم التفاصيل</h6>
+                  <hr>
                 </div>
 
+                <div class="mb-2 radio-card">
+                  <label for="remote_tool_link">Public link</label>
+                  <input type="text" class="form-control" name="remote_tool_link" id="remote_tool_link"
+                    placeholder="e.g. https://participate.lookback.io/123456">
                 </div>
-
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal"> التفاصيل و الخصائص </h6>
-                    <hr>
-                </div>
-
-                <div>
-                    <div class="d-flex gap-4 ">
-                    <p> التوظيف من: </p>
-                    <div>
-                        <b class="con-employment"></b>
-                    </div>
-                    </div>
-
-                    <div class="d-flex gap-4 ">
-                    <p> الفئة العمرية: </p>
-                    <div class="d-grid">
-                        <b class="con-age"></b>
-                    </div>
-                    </div>
-
-                    <div class="d-flex gap-4 ">
-                    <p>النوع: </p>
-                    <div>
-                        <b class="con-gender"></b>
-                    </div>
-                    </div>
-
-                    <div class="d-flex gap-4 ">
-                    <p> اللغات: </p>
-                    <div>
-                        <b class="con-languages">العربية</b>
-                    </div>
-                    </div>
-
-                    <div class="d-flex gap-4 ">
-                    <p>بلد الإقامة: </p>
-                    <div>
-                        <b class="con-country"></b>
-                    </div>
-                    </div>
-                </div>
-
-                </div>
-
-
-
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal"> معايير الفحص </h6>
-                    <hr>
-                </div>
-
-                <div>
-                    <div class="d-flex gap-4 ">
-                    <p> معايير فحص إضافية: </p>
-                    <div>
-                        <b class="con-additional"></b>
-                    </div>
-                    </div>
-
-
-
-                </div>
-
-                </div>
-
-
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal"> التخطيط </h6>
-                    <hr>
-                </div>
-
-                <div>
-                    <div class="d-flex gap-4 ">
-                    <p> متطلبات الجهاز: </p>
-                    <div>
-                        <b class="con-requirements"></b>
-                    </div>
-                    </div>
-
-
-                    <div class="d-flex gap-4 hidden p-device">
-                    <p> الجهاز:</p>
-                    <div>
-                        <b class="con-device"></b>
-                    </div>
-                    </div>
-
-
-
-                    <div class="d-flex gap-4 hidden p-tools ">
-                    <p> الأداة عن بُعد: </p>
-                    <div>
-                        <b class="con-tools"></b>
-                    </div>
-                    </div>
-
-
-                    <div class="d-flex gap-4 hidden p-details">
-                    <p> تفاصيل الوصول عن بُعد: </p>
-                    <div>
-                        <b class="con-details"></b>
-                    </div>
-                    </div>
-
-                    <div class="d-flex gap-4  p-duration">
-                    <p> مدة كل جلسة:</p>
-                    <div>
-                        <b class="con-duration"> 30 دقيقة </b>
-                    </div>
-                    </div>
-
-
-
-                </div>
-
-                </div>
-
-
-                <div class="card p-2 p-md-4 mb-4">
-                <div>
-                    <h6 class="card-title fw-normal"> الأضافات </h6>
-                    <hr>
-                </div>
-
-                <div>
-                    <div class="d-flex gap-4 ">
-                    <p> المستند المطلوب توقيعه: </p>
-                    <div>
-                    <b class="con-document"></b>
-                    </div>
-                    </div>
-
-
-
-                </div>
-
-                </div>
-
-                <div class="d-flex align-items-center gap-3">
-                <button type="button" class="btn btn-outline-dark px-4 py-2 rounded-0 prev-btn">السابق</button>
-                <button type="submit" class="btn btn-dark px-4 py-2 rounded-0 ">ارسال</button>
-                <button class="pdf-button" onclick="generatePdfAndDownload()">Download as PDF</button>
-                </div>
+              </div>
             </div>
-            <!-- ========== End Section ========== -->
 
-            </form>
+            <div class="for-offline">
 
+              <div class="card p-2 p-md-4 mb-4">
+                <div>
+                  <h6 class="card-title fw-normal">حدد المدة، والتاريخ،
+                    والفترة الزمنية</h6>
+                  <hr>
+                </div>
 
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="session-duration">المدة لكل جلسة</label>
+                    <select name="session-duration" class="form-select" id="session-duration">
+                      <option value>اختر المدة</option>
+                      <option selected value="30 دقيقة">30 دقيقة</option>
+                      <option value="60 دقيقة">60 دقيقة</option>
+                      <option value="من 60 ل 120 دقيقة" data-target="120">من 60 ل 120 دقيقة</option>
+               
+                    </select>
+                  </div>
+                </div>
+
+                <div class="my-3 dup-row">
+                  <div class="duplicateContainer ">
+                    <div class="lang-row row mb-3 add_date age-range-row position-relative ">
+                      <div class="col-md-6">
+                        <label for="start-date">بداية من</label>
+                        <input type="date" name="start-date" placeholder="يوم/شهر/شنة" class="form-control"
+                          id="start-date">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="end-date">نهاية بـ</label>
+                        <input type="date" name="end-date" placeholder="يوم/شهر/شنة" class="form-control" id="end-date">
+                      </div>
+
+                      <button type="button" class="remove-row">
+                        <img src="assets/trash-2.svg">
+                      </button>
+                    </div>
+
+                  </div>
+
+                  <button type="button" class="addRowBtn">إضافة موعد</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal">معلومات إضافية للمشاركين</h6>
+                <hr>
+              </div>
+
+              <div class="form-group">
+                <label for="tester-notes">ملاحظات</label>
+                <textarea id="tester-notes" name="tester_notes" rows="6" cols="50" class="form-control"
+                  placeholder="اكتب أي ملاحظات إضافية هنا"></textarea>
+              </div>
+            </div>
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal">معلومات إضافية لـ
+                  TesTTable</h6>
+                <hr>
+              </div>
+
+              <div class="form-group">
+                <label for="testtable-instructions">تعليمات إضافية</label>
+                <textarea id="testtable-instructions" name="testtable_instructions" class="form-control" rows="5"
+                  placeholder="اكتب أي تعليمات إضافية هنا..."></textarea>
+              </div>
+            </div>
+
+    
             
-            <div class="col-md-3 mb-4">
-            <div class="summary-box  position-sticky top-10">
+            <div class="d-flex align-items-center gap-3">
+              <button type="button" class="btn btn-outline-dark px-4 py-2 rounded-0 prev-btn">السابق</button>
 
-                <div class="d-flex align-items-center justify-content-between">
-                <p class="m-0"> نظرة عامة على العرض </p>
-                <span>
-                    <img width="20px" src="assets/Saudi_Riyal_Symbol.svg" alt>
+              <button type="button" class="btn btn-dark px-4 py-2 rounded-0 next-btn">التالي</button>
+            </div>
+          </div>
+          <!-- ========== End Section ========== -->
+
+          <div class="d-none step" id="step-5">
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal">إدارة الحوافز</h6>
+                <hr>
+              </div>
+
+              <p>تقوم TestingTime بالتعامل مع دفع الحوافز لمستخدمي
+                الاختبار</p>
+
+              <label for="incentive-amount">قيمة الحافز لكل مستخدم
+                اختبار</label>
+
+              <div class="d-flex align-items-center  mt-2">
+                <div class="gender-icon">
+                  <img width="20" class="brightness-0" src="assets/Saudi_Riyal_Symbol.svg"
+                    alt="رمز الريال السعودي">
+                </div>
+                <input type="number" id="incentive-amount" name="incentive_amount" class="form-control w-max"
+                  placeholder="مثلاً 10" min="0">
+              </div>
+              <small id="incentive-amount-help" class="form-text ">
+                الحد الأدنى للمبلغ هو
+                <span class="required">
+
                 </span>
 
-                </div>
-                <hr>
-
-                <div class="price-list">
-
-                <div class="participants mb-2 d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center gap-1">
-                    <span class="number"></span>
-                    <span>مشاركين</span>
-                    </div>
-                    <span class="price"></span>
-                </div>
-
-                <div class="at_home d-none mb-2 d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center gap-1">
-                    <span> في منزل مستخدم الاختبار </span>
-                    </div>
-                    <span class="price"> </span>
-                </div>
-
-                <div class="at_location  d-none mb-2 d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center gap-1">
-                    <span> في موقعك</span>
-                    </div>
-                    <span class="price"> </span>
-                </div>
-
-                <div class="age mb-2  d-none d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center gap-1">
-                    <span>الفئة العمرية</span>
-                    </div>
-                    <span class="price"> </span>
-                </div>
-
-                <div class="gender  d-none mb-2 d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center gap-1">
-                    <span> النوع </span>
-                    </div>
-                    <span class="price"> </span>
-                </div>
-
-                <div class="languages  d-none mb-2 d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center gap-1">
-                    <span> اللغات </span>
-                    </div>
-                    <span class="price"> </span>
-                </div>
-
-                <div class="question  d-none mb-2 d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center gap-1">
-                    <span> الأسئلة </span>
-                    </div>
-                    <span class="price"> </span>
-                </div>
-
-                <div class="devices  d-none d-none mb-2 d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center gap-1">
-                    <span> الاجهزة </span>
-                    </div>
-                    <span class="price"> </span>
-                </div>
-
-                <div class="incentives   d-none mb-2 d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center gap-1">
-                    <span> الحوافز </span>
-                    </div>
-                    <span class="price"> </span>
-                </div>
-
-                <div class="documents  d-none mb-2 d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center gap-1">
-                    <span> المرفقات </span>
-                    </div>
-                    <span class="price"> </span>
-                </div>
-
-                </div>
-
-                <hr>
-                <div class="d-flex align-items-baseline justify-content-between">
-                <span>الاجمالي</span>
-                <div class="d-flex align-items-center gap-2">
-                    <span class="total_price"> </span>
-                    <span>
-                    <img width="16px" src="assets/Saudi_Riyal_Symbol.svg" alt>
-                    </span>
-                </div>
-                </div>
-                <p class="polices mb-0">يشمل المبلغ العوامل المستخدمة للاختيار.
-                يخضع هذا الموقع لحماية reCAPTCHA وتطبق عليه
-                سياسة الخصوصية
-                وشروط الخدمة الخاصة بـ Google.</p>
-            </div>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12px" viewBox="0 0 1124.14 1256.39">
+                    <path fill="#000" class="cls-1"
+                      d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z" />
+                    <path fill="#000" class="cls-1"
+                      d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z" />
+                  </svg>
+                </span>
+              </small>
             </div>
 
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal">توقيع المستند</h6>
+                <hr>
+              </div>
+
+              <p>
+                قم برفع مستند ليقوم مستخدم الاختبار بتوقيعه قبل المشاركة في
+                الدراسة.
+                يمكن أن يكون هذا، على سبيل المثال، اتفاقية عدم إفشاء، أو
+                اتفاقية تسجيل
+                جلسة اختبار المستخدم، أو أي مستند آخر.
+              </p>
+
+              
+              <div class="mb-3 radio-card">
+                <input type="radio" name="document_signing_method" value="غير محدد" id="document-signing-none" checked data-value="none">
+                <label class="form-check-label" for="document-signing-none">غير محدد</label>
+              </div>
+
+   
+              
+              <div class="mb-3 radio-card">
+                <input type="radio" name="document_signing_method" value="استخدام مستند موجود" id="document-signing-existing" data-value="existing">
+                <label class="form-check-label" for="document-signing-existing">
+                  استخدام مستند موجود مسبقًا 
+                </label>
+              </div>
+
+              <div class="mb-3 radio-card">
+                <input type="radio" name="document_signing_method" value="رفع مستند جديد" id="document-signing-upload" data-value="upload">
+                <label class="form-check-label" for="document-signing-upload">
+                   رفع مستند جديد 
+                </label>
+
+                <div class="hidden mb-4 sub-options mt-2">
+                  <div class="row g-4 align-items-start mb-2">
+                    <input type="file" name="document_file" id="document_file" class="upload-file">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    
+            
+            <div class="d-flex align-items-center gap-3">
+              <button type="button" class="btn btn-outline-dark px-4 py-2 rounded-0 prev-btn">السابق</button>
+
+              <button type="button" class="btn btn-dark px-4 py-2 rounded-0 next-btn">التالي</button>
+            </div>
+          </div>
+          <!-- ========== End Section ========== -->
+
+          <div class="d-none step" id="step-6">
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal"> الإعدادات الأساسية </h6>
+                <hr>
+              </div>
+
+              <div>
+                <div class="d-flex gap-4 ">
+                  <p>اسم المشروع:</p>
+                  <b class="con-project-name"> اسم المشروع </b>
+                </div>
+                <div class="d-flex gap-4 ">
+                  <p>طريقة الدراسة:</p>
+                  <b class="con-study-method"></b>
+                </div>
+                <div class="d-flex gap-4 ">
+                  <p>عدد مستخدمي الاختبار:</p>
+                  <b class="con-users"></b>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal"> التفاصيل و الخصائص </h6>
+                <hr>
+              </div>
+
+              <div>
+                <div class="d-flex gap-4 ">
+                  <p> التوظيف من: </p>
+                  <div>
+                    <b class="con-employment"></b>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-4 ">
+                  <p> الفئة العمرية: </p>
+                  <div class="d-grid">
+                    <b class="con-age"></b>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-4 ">
+                  <p>النوع: </p>
+                  <div>
+                    <b class="con-gender"></b>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-4 ">
+                  <p> اللغات: </p>
+                  <div>
+                    <b class="con-languages">العربية</b>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-4 ">
+                  <p>بلد الإقامة: </p>
+                  <div>
+                    <b class="con-country"></b>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal"> معايير الفحص </h6>
+                <hr>
+              </div>
+
+              <div>
+                <div class="d-flex gap-4 ">
+                  <p> معايير فحص إضافية: </p>
+                  <div>
+                    <b class="con-additional"></b>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal"> التخطيط </h6>
+                <hr>
+              </div>
+
+              <div>
+                <div class="d-flex gap-4 ">
+                  <p> متطلبات الجهاز: </p>
+                  <div>
+                    <b class="con-requirements"></b>
+                  </div>
+                </div>
+
+
+                <div class="d-flex gap-4 hidden p-device">
+                  <p> الجهاز:</p>
+                  <div>
+                    <b class="con-device"></b>
+                  </div>
+                </div>
+
+
+
+                <div class="d-flex gap-4 hidden p-tools ">
+                  <p> الأداة عن بُعد: </p>
+                  <div>
+                    <b class="con-tools"></b>
+                  </div>
+                </div>
+
+
+                <div class="d-flex gap-4 hidden p-details">
+                  <p> تفاصيل الوصول عن بُعد: </p>
+                  <div>
+                    <b class="con-details"></b>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-4  p-duration">
+                  <p> مدة كل جلسة:</p>
+                  <div>
+                    <b class="con-duration"> 30 دقيقة </b>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+
+
+            <div class="card p-2 p-md-4 mb-4">
+              <div>
+                <h6 class="card-title fw-normal"> الأضافات </h6>
+                <hr>
+              </div>
+
+              <div>
+                <div class="d-flex gap-4 ">
+                  <p> المستند المطلوب توقيعه: </p>
+                  <div>
+                  <b class="con-document"></b>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+
+             <div class="d-flex align-items-center gap-3">
+              <button type="button" class="btn btn-outline-dark px-4 py-2 rounded-0 prev-btn">السابق</button>
+              <button type="submit" class="btn btn-dark px-4 py-2 rounded-0 ">ارسال</button>
+
+            </div>
+          </div>
+          <!-- ========== End Section ========== -->
+
+        </form>
+
+
+        
+        <div class="col-md-3 mb-4">
+          <div class="summary-box  position-sticky top-10">
+
+            <div class="d-flex align-items-center justify-content-between">
+              <p class="m-0"> نظرة عامة على العرض </p>
+              <span>
+                <img width="20px" src="assets/Saudi_Riyal_Symbol.svg" alt>
+              </span>
+
+            </div>
+            <hr>
+
+            <div class="price-list">
+
+              <div class="participants mb-2 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-1">
+                  <span class="number"></span>
+                  <span>مشاركين</span>
+                </div>
+                <span class="price"></span>
+              </div>
+
+              <div class="at_home d-none mb-2 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-1">
+                  <span> في منزل مستخدم الاختبار </span>
+                </div>
+                <span class="price"> </span>
+              </div>
+
+              <div class="at_location  d-none mb-2 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-1">
+                  <span> في موقعك</span>
+                </div>
+                <span class="price"> </span>
+              </div>
+
+              <div class="age mb-2  d-none d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-1">
+                  <span>الفئة العمرية</span>
+                </div>
+                <span class="price"> </span>
+              </div>
+
+              <div class="gender  d-none mb-2 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-1">
+                  <span> النوع </span>
+                </div>
+                <span class="price"> </span>
+              </div>
+
+              <div class="languages  d-none mb-2 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-1">
+                  <span> اللغات </span>
+                </div>
+                <span class="price"> </span>
+              </div>
+
+              <div class="question  d-none mb-2 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-1">
+                  <span> الأسئلة </span>
+                </div>
+                <span class="price"> </span>
+              </div>
+
+              <div class="devices  d-none mb-2 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-1">
+                  <span> الاجهزة </span>
+                </div>
+                <span class="price"> </span>
+              </div>
+
+              <div class="incentives   d-none mb-2 d-flex justify-content-between align-items-center">
+                <div class="d-flexalign-items-center gap-1">
+                  <span> الحوافز </span>
+                </div>
+                <span class="price"> </span>
+              </div>
+
+              <div class="documents  d-none mb-2 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-1">
+                  <span> المرفقات </span>
+                </div>
+                <span class="price"> </span>
+              </div>
+
+                <div class="date  d-none mb-2 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-1">
+                  <span> الفترة الزمنية </span>
+                </div>
+                <span class="price"> </span>
+              </div>
+
+
+            </div>
+
+            <hr>
+            <div class="d-flex align-items-baseline justify-content-between">
+              <span>الاجمالي</span>
+              <div class="d-flex align-items-center gap-2">
+                <span class="total_price"> </span>
+                <span>
+                  <img width="16px" src="assets/Saudi_Riyal_Symbol.svg" alt>
+                </span>
+              </div>
+            </div>
+            <p class="polices mb-0">يشمل المبلغ العوامل المستخدمة للاختيار.
+              يخضع هذا الموقع لحماية reCAPTCHA وتطبق عليه
+              سياسة الخصوصية
+              وشروط الخدمة الخاصة بـ Google.</p>
+          </div>
         </div>
-        </div>
-    </section>
+
+      </div>
+    </div>
+  </section>
 
     <!-- Footer Section -->
     <footer class="footer-section bg-black text-white pt-5">
@@ -1528,24 +1466,6 @@
     </footer>
   <script src="js/JQuery.js"></script>
   <script src="js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script>
-        function generatePdfAndDownload() {
-            const element = document.getElementById('content-to-export'); // Get the specific HTML element you want to convert
-
-            // Configure options for html2pdf
-            const options = {
-                margin: 10,
-                filename: 'my-page-document.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2 }, // Higher scale means better quality but larger file size
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-
-            // Use html2pdf to generate and save the PDF
-            html2pdf().set(options).from(element).save();
-        }
-    </script>
 </body>
 
 </html>

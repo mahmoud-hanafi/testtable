@@ -2,7 +2,7 @@ function handleInputChange_1(input) {
   const $input = $(input);
   const container = $input.closest('.card');
 
-  const selectedMainRadio = container.find('input[name="main-method-contact"]:checked');
+  const selectedMainRadio = container.find('input[name="l."]:checked');
 
   container.find('.sub-options').addClass('hidden');
 
@@ -23,12 +23,15 @@ function handleInputChange_3(input) {
     container = $input.closest('.section');
 
   } else {
+   
     container = $input.closest('.card, .section');
 
   }
 
 
-  container.find('.sub-options').addClass('hidden');
+ 
+
+
   container.find('[data-id]').addClass('hidden');
 
   container.find('input[type="radio"]:checked').each(function () {
@@ -537,26 +540,26 @@ $(document).on('input', '[name="incentive_amount"]', function () {
 
 
 
-$(document).on('change', '[name="document_signing_method"]', function () {
-  let price = 0;
-  const selectedVal = $(this).data('value');
+// $(document).on('change', '[name="document_signing_method"]', function () {
+//   let price = 0;
+//   const selectedVal = $(this).data('value');
 
-  if (selectedVal === 'existing' || selectedVal === 'upload') {
-    price = 10;
-  }
+//   if (selectedVal === 'existing' || selectedVal === 'upload') {
+//     price = 10;
+//   }
 
-  if (price > 0) {
-    $('.price-list .documents').removeClass('d-none');
-    $('.price-list .documents .price').text(users * price);
-  } else {
-    $('.price-list .documents').addClass('d-none');
-  }
-  $('.total_price').text(sumPrices());
+//   if (price > 0) {
+//     $('.price-list .documents').removeClass('d-none');
+//     $('.price-list .documents .price').text(users * price);
+//   } else {
+//     $('.price-list .documents').addClass('d-none');
+//   }
+//   $('.total_price').text(sumPrices());
 
-  $('.con-document').text($(this).val());
+//   $('.con-document').text($(this).val());
 
 
-});
+// });
 
 
 
@@ -648,5 +651,33 @@ $(document).on('input', '[name="remote_tool_link"]', function () {
 
 
 $(document).on("change", '[name="session-duration"]', function () {
-  $('.con-duration').text($(this).val());
+  let price = 15;
+  let val = $(this).val();
+  $('.con-duration').text(val);
+ 
+  let target = $(this).find('option:selected').data('target');
+
+
+  if (target == 120) { 
+    $('.price-list .date').removeClass('d-none');
+    $('.price-list .date .price').text( price);
+
+  } else {
+    $('.price-list .date').addClass('d-none'); 
+    $('.price-list .date .price').text(0);
+ 
+  }
+});
+
+
+
+$(document).on("input", "[type='date']", function () {
+
+  if ($(this).val() === "") {
+    $(this).removeClass("has-val");
+   
+  } else {
+
+    $(this).addClass("has-val");
+  }
 });

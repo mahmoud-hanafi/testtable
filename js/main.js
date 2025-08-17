@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (video) {
     video.addEventListener("ended", () => {
       const container = document.querySelector(".hero-video-container");
-      // if (container) container.remove();
+      if (container) container.remove();
 
       const heroSection = document.querySelector(".hero-section");
       if (heroSection) heroSection.style.backgroundColor = "black";
