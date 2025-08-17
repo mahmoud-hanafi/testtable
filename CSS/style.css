@@ -2158,7 +2158,7 @@ input::placeholder {
         accent-color: black;
     }
 
-    .add_date .remove-row {
+.add_date .remove-row {
         left: -30px !important;
     }
 
@@ -2166,20 +2166,21 @@ input::placeholder {
         position: relative;
     }
 
-[type=date]:not(.has-val):before {
-  content: attr(placeholder) !important;
-  position: absolute;
-  background: #fff;
-  width: 100%;
-  z-index: 0;
-  right: 0;
-  width: calc(100% - 45px);
-  height: 100%;
-  top: 0;
-  display: flex;
-  align-items: center;
-  padding: 6px;
-}
+    [type=date]:not(.has-val):before {
+        content: attr(placeholder) !important;
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        z-index: 0;
+
+        width: calc(100% - 45px);
+        height: 100%;
+        top: 0;
+        display: flex;
+        align-items: center;
+        padding: 6px;
+        inset-block-start: 0;
+    }
 [type="file"]::-webkit-file-upload-button {
   background-color: #212529;
   color: white;

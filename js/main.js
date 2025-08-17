@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   lucide.createIcons();
 
-  // =================== [ Direction Detection ] ===================
+// =================== [ Direction Detection ] ===================
 // Check if the page is RTL
 const isRTL = document.documentElement.dir === 'rtl';
 

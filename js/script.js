@@ -2,7 +2,7 @@ function handleInputChange_1(input) {
   const $input = $(input);
   const container = $input.closest('.card');
 
-  const selectedMainRadio = container.find('input[name="l."]:checked');
+  const selectedMainRadio = container.find('input[name="main-method-contact"]:checked');
 
   container.find('.sub-options').addClass('hidden');
 
@@ -11,9 +11,6 @@ function handleInputChange_1(input) {
   }
 
 }
-
-
-
 
 function handleInputChange_3(input) {
   const $input = $(input);
@@ -27,10 +24,6 @@ function handleInputChange_3(input) {
     container = $input.closest('.card, .section');
 
   }
-
-
- 
-
 
   container.find('[data-id]').addClass('hidden');
 
@@ -62,8 +55,6 @@ function handleInputChange_3(input) {
 }
 
 
-
-
 $(document).on('change', 'input[type="radio"], input[type="checkbox"]', function () {
 
 
@@ -77,8 +68,6 @@ $(document).on('change', 'input[type="radio"], input[type="checkbox"]', function
   }
 
 });
-
-
 
 
 let rowIndex = 1;
@@ -473,7 +462,8 @@ $(document).on('change', '[name="write_question"]', function () {
 
   if (price > 0) {
     $('.price-list .question').removeClass('d-none');
-    $('.price-list .question .price').text(users * price);
+    // $('.price-list .question .price').text(users * price);
+    $('.price-list .question .price').text(100);
   } else {
     $('.price-list .question').addClass('d-none');
   }
@@ -540,26 +530,26 @@ $(document).on('input', '[name="incentive_amount"]', function () {
 
 
 
-// $(document).on('change', '[name="document_signing_method"]', function () {
-//   let price = 0;
-//   const selectedVal = $(this).data('value');
+$(document).on('change', '[name="document_signing_method"]', function () {
+  let price = 0;
+  const selectedVal = $(this).data('value');
 
-//   if (selectedVal === 'existing' || selectedVal === 'upload') {
-//     price = 10;
-//   }
+  if (selectedVal === 'existing' || selectedVal === 'upload') {
+    price = 10;
+  }
 
-//   if (price > 0) {
-//     $('.price-list .documents').removeClass('d-none');
-//     $('.price-list .documents .price').text(users * price);
-//   } else {
-//     $('.price-list .documents').addClass('d-none');
-//   }
-//   $('.total_price').text(sumPrices());
+  // if (price > 0) {
+  //   $('.price-list .documents').removeClass('d-none');
+  //   $('.price-list .documents .price').text(users * price);
+  // } else {
+  //   $('.price-list .documents').addClass('d-none');
+  // }
+  $('.total_price').text(sumPrices());
 
-//   $('.con-document').text($(this).val());
+  $('.con-document').text($(this).val());
 
 
-// });
+});
 
 
 
